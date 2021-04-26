@@ -1,0 +1,34 @@
+@import "fonts.css";
+@import "general.css";
+@import "blocks/section/section.css";
+@import "blocks/header/header.css";
+
+@import "blocks/custom-select/custom-select.css";
+
+@import "blocks/modal/modal.css";
+
+@import "blocks/hero/hero.css";
+
+@import "blocks/coourses/courses.css";
+@import "blocks/coourses/course.css";
+
+@import "blocks/steps/steps.css";
+
+@import "blocks/team/team.css";
+@import "blocks/team/member.css";
+
+@import "blocks/certificate/certificate.css";
+
+@import "blocks/photogallery/photogallery.css";
+
+@import "blocks/reviews/reviews.css";
+@import "blocks/reviews/review.css";
+@import "blocks/reviews/chat.css";
+
+@import "blocks/address/addresses.css";
+@import "blocks/address/city.css";
+
+@import "blocks/footer/order.css";
+@import "blocks/footer/form.css";
+
+@import "blocks/footer/footer.css";

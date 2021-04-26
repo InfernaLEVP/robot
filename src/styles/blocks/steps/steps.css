@@ -1,0 +1,143 @@
+.steps{
+    position: relative;
+}
+.steps__figure{
+    position: absolute;
+}
+.steps__figure:nth-child(1){
+    left: 0;
+    top: 0;
+    transform: translate(-29%,0%);
+}
+.steps__figure:nth-child(2){
+    right: 0;
+    bottom: 0;
+    transform: rotate(-180deg) translate(-16%, -22%);
+}
+@media(max-width: 992px){
+    .steps{
+        background: #F9F9F9;
+    }
+    .steps__figure{
+        display: none;
+    }
+}
+
+/*  */
+.steps__title{
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 5;
+}
+@media(max-width: 992px){
+    .steps__title{
+        padding-top: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+/*  */
+.steps__wrapper{
+    position: relative;
+    padding-bottom: 60px;
+}
+@media(max-width: 992px){
+    .steps__wrapper{
+        display: none;
+    }
+}
+
+/*  */
+.steps__list{
+    max-width: 995px;
+    margin: 0 auto;
+}
+@media(max-width: 992px){
+    .steps__list{
+        
+    }
+}
+
+/*  */
+.step{
+    display: flex;
+}
+.step:nth-child(odd){
+    justify-content: flex-end;
+}
+@media(max-width: 992px){
+    .step{
+
+    }
+}
+
+/*  */
+.step__wrapper{
+    min-height: 115px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 36%;
+}
+@media(max-width: 992px){
+    .step__wrapper{
+
+    }
+}
+
+/*  */
+.step__name{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #E71404;
+    margin-bottom: 18px;
+}
+@media(max-width: 992px){
+    .step__name{
+
+    }
+}
+
+/*  */
+.step__description{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
+@media(max-width: 992px){
+    .step__description{
+
+    }
+}
+
+/*  */
+.steps__bg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 0;
+}
+@media(max-width: 992px){
+    .steps__bg{
+
+    }
+}
+
+/*  */
+.steps__mobile{
+    display: none;
+}
+@media(max-width: 992px){
+    .steps__mobile{
+        display: flex;
+        /* transform: translateY(-186px); */
+    }
+    .steps__mobile img{
+        width: 100%;
+    }
+}

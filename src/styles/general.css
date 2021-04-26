@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+/* Variables */
+
+:root {
+    --basic-color: #422814;
+    --accent: #E71404;
+}
+  
+html{
+    scroll-behavior: smooth;
+    -webkit-print-color-adjust: exact;
+}
+
+body{
+    margin: 0;
+    font-family: 'LatoWeb', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #003045;
+    letter-spacing: 0.7px;
+    overflow-x: hidden;
+}
+@media(max-width: 1130px){
+    body{
+        font-size: 12px;
+    }
+}
+  
+a{
+    color: inherit;
+    text-decoration: none!important;
+}
+  
+img{
+    max-width: 100%;
+}
+  
+video{
+    max-width: 100%;
+}
+
+.lContainer{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+@media(max-width: 1540px){
+    .lContainer{
+        max-width: 1140px;
+        margin: 0 auto;
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+}
+@media(max-width: 1200px){
+    .lContainer{
+        max-width: 93%;
+        margin: 0 auto;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+@media(max-width: 992px){
+    .lContainer{
+		max-width: 100%;
+        padding-left: 4.5%;
+        padding-right: 4.5%;
+    }
+}
+
+ul{
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+/* Moema */
+.button--moema {
+    cursor: pointer;
+	/* padding: 1.5em 3em;
+	border-radius: 50px; */
+	/* background: #7986cb; */
+    display: flex;
+    justify-content: center;
+	color: #fff;
+	-webkit-transition: background-color 0.3s, background 0.3s, color 0.3s;
+	transition: background-color 0.3s, background 0.3s, color 0.3s;
+}
+.button--moema.button--inverted {
+	/* background: #ECEFF1; */
+	/* color: #37474f; */
+}
+.button--moema::before {
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	bottom: -20px;
+	right: -20px;
+	background: inherit;
+	border-radius: 50px;
+	z-index: -1;
+	opacity: 0.4;
+	-webkit-transform: scale3d(0.8, 0.5, 1);
+	transform: scale3d(0.8, 0.5, 1);
+}
+@media(max-width: 992px){
+    .button--moema::before{
+        display: none;
+    }
+}
+.courses .button--moema::before{
+    transform: scale3d(0.7, 0.4, 1);
+}
+.button--moema:hover {
+	-webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+	transition: background-color 0.1s 0.3s, color 0.3s;
+	color: #ECEFF1;
+	background-color: #ef9c4e;
+	-webkit-animation: anim-moema-1 0.3s forwards;
+	animation: anim-moema-1 0.3s forwards;
+}
+.button--moema.button--inverted:hover {
+	color: #ECEFF1;
+	background-color: #ef9c4e;
+}
+.order .button--moema:hover,
+.certificate .button--moema:hover{
+    background-color: #e71404;
+    background: #e71404;
+}
+.courses .button--moema:hover{
+    background: linear-gradient(9.72deg,#e71404 -4.13%,#f2c656 103.09%);
+}
+.order .button--moema.button--inverted:hover{
+    background-color: #e71404;
+}
+
+.order .order__description .button--moema::before {
+	opacity: 0;
+}
+.order .order__description .button--moema:hover::before{
+	opacity: 0.4;
+}
+.order .order__description .button--moema:hover{
+	background: linear-gradient(9.72deg,#e71404 -4.13%,#f2c656 103.09%);
+}
+.button--moema:hover::before {
+	-webkit-animation: anim-moema-2 0.3s 0.3s forwards;
+	animation: anim-moema-2 0.3s 0.3s forwards;
+}
+@-webkit-keyframes anim-moema-1 {
+	60% {
+		-webkit-transform: scale3d(0.8, 0.8, 1);
+		transform: scale3d(0.8, 0.8, 1);
+	}
+	85% {
+		-webkit-transform: scale3d(1.1, 1.1, 1);
+		transform: scale3d(1.1, 1.1, 1);
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes anim-moema-1 {
+	60% {
+		-webkit-transform: scale3d(0.8, 0.8, 1);
+		transform: scale3d(0.8, 0.8, 1);
+	}
+	85% {
+		-webkit-transform: scale3d(1.1, 1.1, 1);
+		transform: scale3d(1.1, 1.1, 1);
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@-webkit-keyframes anim-moema-2 {
+	to {
+		opacity: 0;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes anim-moema-2 {
+	to {
+		opacity: 0;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}

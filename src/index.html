@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Роботенок</title>
+
+    <!-- FavIcons -->
+    <!-- <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- OG\Twitter -->
+    <meta property="og:type" content="product" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:url" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="" />
+    <meta property="twitter:title" content="" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:image" content="" />
+    <meta property="twitter:url" content="" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    
+    @@include('./header.html')
+    <!-- Hero block -->
+    <div class="hero">
+        <div class="hero__wrapper lContainer">
+            <div class="hero__figure">
+                <picture>
+                    <source srcset="./images/back.webp" type="image/webp">
+                    <img src="./images/back.png" alt="">
+                </picture>
+            </div>
+            
+            <div class="hero__info">
+                <h1 class="hero__title">
+                    <span>Школа роботехники</span>
+                    <span>и программирования</span>
+                    <span class="hero__subtitle">для детей от 6 до 16 лет </span>
+                </h1>
+    
+                <div class="hero__guarantee">
+                    Интерес к знаниям гарантирован,
+                    <strong>иначе мы возвращаем деньги</strong>
+                </div>
+    
+                <a href="/#order-form" class="hero__signUp">
+                    Записаться на бесплатный урок
+                </a>
+    
+            </div>
+    
+            <div class="hero__image">
+                <picture>
+                    <source srcset="./images/hero-image.webp" type="image/webp">
+                    <img src="./images/hero-image.png" alt="Роботёнок мать и сын">
+                </picture>
+                <img class="hero-gif" src="./images/hero-gif.gif" alt="">
+            </div>
+
+            <a href="/#order-form" class="hero__signUp">
+                Записаться на бесплатный урок
+            </a>
+
+        </div>
+
+        <div class="hero__arrow">
+            <svg width="53" height="33" viewBox="0 0 53 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M49.5 3.22275L25.9998 16.8329L3.06477 3.22274" stroke="#EF9C4E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M49.5 16.2228L25.9998 29.8329L3.06477 16.2227" stroke="#EF9C4E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>                    
+        </div>
+
+    </div>
+    <!-- ./Hero block --> 
+    
+    <!-- Our Courses -->
+    <section class="courses section" id="courses">
+        <div class="courses__figure">
+            <picture>
+                <source srcset="./images/back.webp" type="image/webp">
+                <img src="./images/back.png" alt="">
+            </picture>
+        </div>
+        <div class="courses__figure">
+            <picture>
+                <source srcset="./images/back.webp" type="image/webp">
+                <img src="./images/back.png" alt="">
+            </picture>
+        </div>
+
+        <div class="courses__wrapper lContainer">
+            <h2 class="courses__title section__title">Наши курсы</h2>
+
+            <div class="corses__list">
+
+                <!-- Course card -->
+                <div class="course">
+
+                    <div class="course__head">
+                        <div class="course__name">
+                            <span>Юный</span>
+                            <span>инженер</span>
+                        </div>
+                        <div class="course__image">
+                            <picture>
+                                <source srcset="./images/course_young_engineer.webp" type="image/webp">
+                                <img src="./images/course_young_engineer.jpg" alt="Курс Юный инженер - Роботёнок">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="course__description">
+                        <p>
+                            Ваш ребенок без ума от конструктора Lego, постоянно пытается собрать что-то интересное? Вы хотите, чтобы он узнал, как воплотить в жизнь свои самые смелые творения? Мы готовы помочь!
+                        </p>
+                        <div class="course__pitch">
+                            <div class="close-pitch">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <p>Наши занятия развивают пространственное мышление, воображение и мелкую моторику, учат работать в команде!</p>
+                            <button class="course__order md-trigger" data-modal="modal-3"><span>Записаться</span></button>
+                        </div>
+                    </div>
+
+                    <div class="course__actions">
+                        <button class="course__details"><span>Подробнее</span></button>
+                        <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
+                    </div>
+
+                </div>
+                <!-- Course card -->
+
+                <!-- Course card -->
+                <div class="course">
+
+                    <div class="course__head">
+                        <div class="course__name">
+                            <span>Будущий</span>
+                            <span>изобретатель</span>
+                        </div>
+                        <div class="course__image">
+                            <picture>
+                                <source srcset="./images/course_future_inventor.webp" type="image/webp">
+                                <img src="./images/course_future_inventor.jpg" alt="Курс Будущий изобретатель - Роботёнок">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="course__description">
+                        <p>
+                            Ребенка вдохновляют достижения науки и техники, интересуют последние новинки в мире технологий? Вы хотите, чтобы он разбирался в устройствах и гаджетах, и однажды изобрел что-то свое, необычное? Это возможно!
+                        </p>
+                        <div class="course__pitch">
+                            <div class="close-pitch">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <p>Данный курс откроет дорогу в мир экспериментов, позволит на практике осознать математику и физику и научит преодолевать трудности!</p>
+                            <button class="course__order md-trigger" data-modal="modal-3"><span>Записаться</span></button>
+                        </div>
+                    </div>
+
+                    <div class="course__actions">
+                        <button class="course__details"><span>Подробнее</span></button>
+                        <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
+                    </div>
+
+                </div>
+                <!-- Course card -->
+
+                <div class="courses__mobile">
+                    <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35.7886 2.15704L19.2178 11.754L3.04563 2.15703" stroke="#EF9C4E" stroke-width="4.23079" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M35.7886 11.3238L19.2178 20.9207L3.04563 11.3238" stroke="#EF9C4E" stroke-width="4.23079" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>                   
+
+                <!-- Course card -->
+                <div class="course">
+
+                    <div class="course__head">
+                        <div class="course__name">
+                            <span>Создание игр</span>
+                            <span>в среде Scratch</span>
+                        </div>
+                        <div class="course__image">
+                            <picture>
+                                <source srcset="./images/course_scratch.webp" type="image/webp">
+                                <img src="./images/course_scratch.png" alt="Курс Создание игр в среде Scratch - Роботёнок">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="course__description">
+                        <p>
+                            Ваш ребенок постоянно играет
+                            в компьютерные игры, а вы бы хотели направить его энергию
+                            в правильное русло? Тогда это
+                            к нам! Пришла пора другим играть в игры, которые создаст Ваш ребенок!
+                        </p>
+                        <div class="course__pitch">
+                            <div class="close-pitch">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <p>Дети будут создавать своих персонажей, анимировать и программировать их, и главное получать радость от собственного творения!</p>
+                            <button class="course__order md-trigger" data-modal="modal-3"><span>Записаться</span></button>
+                        </div>
+                    </div>
+
+                    <div class="course__actions">
+                        <button class="course__details"><span>Подробнее</span></button>
+                        <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
+                    </div>
+
+                </div>
+                <!-- Course card -->
+
+                <!-- Course card -->
+                <div class="course">
+
+                    <div class="course__head">
+                        <div class="course__name">
+                            <span>Экстремальная</span>
+                            <span>математика</span>
+                        </div>
+                        <div class="course__image">
+                            <picture>
+                                <source srcset="./images/course_math.webp" type="image/webp">
+                                <img src="./images/course_math.png" alt="Курс Экстремальная математика - Роботёнок">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="course__description">
+                        <p>
+                            У ребенка есть склонности
+к точным наукам, он любит решать задачи и быстрее других находить верный ответ? Скорость мышления можно разогнать до бесконечности!
+                        </p>
+                        <div class="course__pitch">
+                            <div class="close-pitch">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <p>Данные занятия помогают структурировать мышление, сконцентрироваться на главном, находить скрытые возможности и нестандартные решения!</p>
+                            <button class="course__order md-trigger" data-modal="modal-3"><span>Записаться</span></button>
+                        </div>
+                    </div>
+
+                    <div class="course__actions">
+                        <button class="course__details"><span>Подробнее</span></button>
+                        <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
+                    </div>
+
+                </div>
+                <!-- Course card -->
+
+                <div class="courses__mobile">
+                    <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35.7886 2.15704L19.2178 11.754L3.04563 2.15703" stroke="#EF9C4E" stroke-width="4.23079" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M35.7886 11.3238L19.2178 20.9207L3.04563 11.3238" stroke="#EF9C4E" stroke-width="4.23079" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div> 
+                
+                <!-- Course card -->
+                <div class="course">
+
+                    <div class="course__head">
+                        <div class="course__name">
+                            <span>Цифровой</span>
+                            <span>художник</span>
+                        </div>
+                        <div class="course__image">
+                            <picture>
+                                <source srcset="./images/course_digital_artist.webp" type="image/webp">
+                                <img src="./images/course_digital_artist.png" alt="Курс Цифровой художник - Роботёнок">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="course__description">
+                        <p>
+                            Ребенок увлечен рисованием,
+                            и вы считаете, что необходимо развивать его способности
+                            в современных направлениях, таких как графический дизайн 
+                            и создание анимации? 
+                            Вам к нам!
+                        </p>
+                        <div class="course__pitch">
+                            <div class="close-pitch">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <p>Курс знакомит с принципами дизайнерских решений, учит работе в прикладных программах для создания профессиональных рисунков и спецэффектов! </p>
+                            <button class="course__order md-trigger" data-modal="modal-3"><span>Записаться</span></button>
+                        </div>
+                    </div>
+
+                    <div class="course__actions">
+                        <button class="course__details"><span>Подробнее</span></button>
+                        <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
+                    </div>
+
+                </div>
+                <!-- Course card -->
+
+                <!-- Course card -->
+                <div class="course">
+
+                    <div class="course__head">
+                        <div class="course__name">
+                            <span>Создание сайтов</span>
+                            <span>(HTML, CSS, JS)</span>
+                        </div>
+                        <div class="course__image">
+                            <picture>
+                                <source srcset="./images/course_site_builder.webp" type="image/webp">
+                                <img src="./images/course_site_builder.png" alt="Курс Создание сайтов (HTML, CSS, JS) - Роботёнок">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="course__description">
+                        <p>
+                            Ваш ребенок мечтает стать программистом, хочет здесь и сейчас освоить новую профессию?
+                            По итогу курса каждый создаст свой профессиональный сайт!
+                        </p>
+                        <div class="course__pitch">
+                            <div class="close-pitch">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <p>Мы познакомимся сразу с несколькими важнейшими языками, которые должен знать front-end-разработчик, разберем архитектуру сайта и создадим уникальный дизайн!</p>
+                            <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
+                        </div>
+                    </div>
+
+                    <div class="course__actions">
+                        <button class="course__details"><span>Подробнее</span></button>
+                        <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
+                    </div>
+
+                </div>
+                <!-- Course card -->
+
+                <!-- Course card -->
+                <div class="course">
+
+                    <div class="course__head">
+                        <div class="course__name">
+                            <span>Будущий</span>
+                            <span>изобретатель</span>
+                        </div>
+                        <div class="course__image">
+                            <picture>
+                                <source srcset="./images/course_future_inventor.webp" type="image/webp">
+                                <img src="./images/course_future_inventor.jpg" alt="Курс Будущий изобретатель - Роботёнок">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="course__description">
+                        <p>
+                            Ребенка вдохновляют достижения науки и техники, интересуют последние новинки в мире технологий? Вы хотите, чтобы он разбирался в устройствах и гаджетах, и однажды изобрел что-то свое, необычное? Это возможно!
+                        </p>
+                        <div class="course__pitch">
+                            <div class="close-pitch">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <p>Данный курс откроет дорогу в мир экспериментов, позволит на практике осознать математику и физику и научит преодолевать трудности!</p>
+                            <button class="course__order md-trigger" data-modal="modal-3"><span>Записаться</span></button>
+                        </div>
+                    </div>
+
+                    <div class="course__actions">
+                        <button class="course__details"><span>Подробнее</span></button>
+                        <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
+                    </div>
+
+                </div>
+                <!-- Course card -->
+
+            </div>
+
+            <div class="courses__all">
+                <button class="courses__button button button--moema button--inverted button--text-thick button--size-s" id="allCourses" data-state="closed">Все курсы</button>
+            </div>
+
+        </div>
+    </section>
+    <!-- ./Our Courses -->
+
+    <!-- Steps -->
+    <section class="steps section">
+        <div class="steps__figure">
+            <img src="./images/rectangles-left.svg" alt="">
+        </div>
+        <div class="steps__figure">
+            <img src="./images/rectangles-left.svg" alt="">
+        </div>
+        <div class="steps__title section__title">Как проходят занятия​</div>
+
+        <div class="steps__wrapper lContainer">
+            <div class="steps__list">
+
+                <div class="step">
+                    <div class="step__wrapper">
+                        <div class="step__name">постановка задач</div>
+                        <div class="step__description">Объясняем теоретические законы каждой темы, приводим примеры практического использования.</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                     <div class="step__wrapper">
+                        <div class="step__name">конструирование</div>
+                        <div class="step__description">Используя полученные знания, типовые конструкции и своё воображение, собираем модель.</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                     <div class="step__wrapper">
+                        <div class="step__name">программирование</div>
+                        <div class="step__description">Вдыхаем душу в свое творение, обучаем робота определенным действиям.</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                     <div class="step__wrapper">
+                        <div class="step__name">испытание</div>
+                        <div class="step__description">Тестируем свое изобретение, проводим работу над ошибками.</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                     <div class="step__wrapper">
+                        <div class="step__name">модификации</div>
+                        <div class="step__description">Модернизируем, дорабатываем свою модель</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <svg class="steps__bg" width="220" height="594" viewBox="0 0 220 594" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M154.203 28.259H110.789L89.0793 67.0058L110.789 105.76H154.203L175.906 67.0058L154.203 28.259Z"
+                    stroke="#EF9C4E" stroke-miterlimit="10" />
+                <path
+                    d="M134.258 66.8577C134.258 77.0943 130.236 84.1231 121.987 84.1231C113.642 84.1231 109.962 76.4316 109.914 67.0622C109.914 57.4883 113.888 49.9025 122.233 49.9025C130.885 49.8954 134.258 57.7914 134.258 66.8577ZM117.52 67.0622C117.472 74.648 119.257 78.2646 122.192 78.2646C125.119 78.2646 126.713 74.4929 126.713 66.9564C126.713 59.6244 125.174 55.754 122.144 55.754C119.36 55.754 117.472 59.3706 117.52 67.0622Z"
+                    fill="#EF9C4E" />
+                <path d="M147.623 57.3332H147.527L141.364 60.3365L140.119 54.5273L148.663 50.4524H154.928V83.5592H147.623V57.3332Z"
+                    fill="#EF9C4E" />
+                <g filter="url(#filter0_d)">
+                    <path
+                        d="M28.7368 403.636C28.128 404.729 28.128 406.069 28.7368 407.161L52.3964 449.391C53.012 450.484 54.1406 451.153 55.3581 451.153H110.584V451.167H175.441C176.666 451.167 177.794 451.844 178.403 452.93L213.93 516.359C214.545 517.452 214.545 518.791 213.93 519.884L178.403 583.313C177.794 584.398 176.666 585.075 175.441 585.075H5.77491V563.883H163.567C164.791 563.883 165.92 563.206 166.529 562.12L190.188 519.884C190.797 518.791 190.797 517.452 190.188 516.359L166.529 474.122C165.92 473.036 164.791 472.36 163.567 472.36H108.348V472.346H43.4907C42.2663 472.346 41.1377 471.676 40.529 470.583L4.99514 407.161C4.38638 406.069 4.38638 404.729 4.99514 403.636L40.529 340.207C41.1377 339.122 42.2663 338.445 43.4907 338.445H109.914V338.318H165.14C166.364 338.318 167.493 337.648 168.102 336.556L191.761 294.319C192.37 293.233 192.37 291.887 191.761 290.794L168.102 248.564C167.493 247.472 166.364 246.802 165.14 246.802H112.684V246.809H45.5837C44.3662 246.809 43.2376 246.132 42.622 245.047L7.09503 181.618C6.48627 180.525 6.48627 179.185 7.09503 178.093L42.622 114.664C43.2376 113.578 44.3662 112.901 45.5837 112.901H104.928V112.767H160.154C161.378 112.767 162.507 112.098 163.115 111.005L186.775 68.7683C187.384 67.6826 187.384 66.336 186.775 65.2433L163.115 23.0138C162.507 21.921 161.378 21.2513 160.154 21.2513H122.048V21.3923L5.10459 21.3852V0.192906L104.928 0.199958V0.05896H172.028C173.246 0.05896 174.374 0.72871 174.99 1.82146L210.517 65.2433C211.125 66.336 211.125 67.6826 210.517 68.7683L174.99 132.197C174.374 133.29 173.246 133.96 172.028 133.96H112.684V134.094H57.458C56.2336 134.094 55.105 134.77 54.4963 135.856L30.8367 178.093C30.2279 179.185 30.2279 180.525 30.8367 181.618L54.4963 223.854C55.105 224.94 56.2336 225.617 57.458 225.617H109.914V225.61H177.014C178.232 225.61 179.36 226.279 179.976 227.372L215.503 290.794C216.112 291.887 216.112 293.233 215.503 294.319L179.976 357.748C179.36 358.841 178.232 359.51 177.014 359.51H110.584V359.637H55.3581C54.1406 359.637 53.012 360.314 52.3964 361.4L28.7368 403.636Z"
+                        fill="url(#paint0_linear)" />
+                </g>
+                <path d="M102.342 366.645H58.9287L37.2253 405.399L58.9287 444.153H102.342L124.052 405.399L102.342 366.645Z"
+                    stroke="#EF9C4E" stroke-miterlimit="10" />
+                <path d="M154.203 253.81H110.789L89.0793 292.556L110.789 331.31H154.203L175.906 292.556L154.203 253.81Z"
+                    stroke="#EF9C4E" stroke-miterlimit="10" />
+                <path d="M104.818 141.101H61.4047L39.6946 179.855L61.4047 218.609H104.818L126.522 179.855L104.818 141.101Z"
+                    stroke="#EF9C4E" stroke-miterlimit="10" />
+                <path d="M154.203 479.367H110.789L89.0793 518.121L110.789 556.875H154.203L175.906 518.121L154.203 479.367Z"
+                    stroke="#EF9C4E" stroke-miterlimit="10" />
+                <path
+                    d="M82.6635 179.7C82.6635 189.937 78.6621 196.965 70.4609 196.965C62.1571 196.965 58.5045 189.274 58.4567 179.904C58.4567 170.331 62.4102 162.745 70.714 162.745C79.305 162.745 82.6635 170.634 82.6635 179.7ZM66.0149 179.904C65.967 187.49 67.7454 191.107 70.6592 191.107C73.5731 191.107 75.1531 187.335 75.1531 179.799C75.1531 172.467 73.621 168.596 70.6045 168.596C67.8412 168.596 65.9602 172.213 66.0149 179.904Z"
+                    fill="#EF9C4E" />
+                <path
+                    d="M86.3706 196.409V191.72L90.5225 187.85C97.5403 181.385 100.947 177.663 101.049 173.792C101.049 171.092 99.4692 168.956 95.7619 168.956C92.9986 168.956 90.5772 170.38 88.8946 171.705L86.7673 166.157C89.1887 164.275 92.9439 162.745 97.2941 162.745C104.558 162.745 108.56 167.123 108.56 173.136C108.56 178.685 104.654 183.119 100.01 187.399L97.041 189.944V190.042H109.148V196.409H86.3706Z"
+                    fill="#EF9C4E" />
+                <path
+                    d="M131.316 292.407C131.316 302.643 127.315 309.672 119.114 309.672C110.81 309.672 107.157 301.981 107.109 292.611C107.109 283.037 111.063 275.452 119.367 275.452C127.951 275.445 131.316 283.341 131.316 292.407ZM114.661 292.604C114.613 300.19 116.391 303.807 119.305 303.807C122.219 303.807 123.799 300.035 123.799 292.499C123.799 285.167 122.267 281.296 119.25 281.296C116.487 281.303 114.613 284.92 114.661 292.604Z"
+                    fill="#EF9C4E" />
+                <path
+                    d="M136.357 301.524C137.691 302.236 140.755 303.562 143.82 303.562C147.725 303.562 149.702 301.623 149.702 299.127C149.702 295.87 146.542 294.389 143.232 294.389H140.167V288.841H143.081C145.598 288.792 148.813 287.826 148.813 285.02C148.813 283.032 147.233 281.558 144.066 281.558C141.446 281.558 138.683 282.729 137.349 283.547L135.817 277.942C137.746 276.666 141.597 275.446 145.749 275.446C152.616 275.446 156.419 279.161 156.419 283.695C156.419 287.205 154.49 289.962 150.537 291.386V291.485C154.388 292.197 157.507 295.2 157.507 299.529C157.507 305.387 152.513 309.667 144.36 309.667C140.208 309.667 136.699 308.546 134.825 307.326L136.357 301.524Z"
+                    fill="#EF9C4E" />
+                <path
+                    d="M78.8809 405.244C78.8809 415.48 74.8795 422.509 66.6783 422.509C58.3745 422.509 54.722 414.818 54.6741 405.448C54.6741 395.874 58.6276 388.288 66.9314 388.288C75.5224 388.288 78.8809 396.177 78.8809 405.244ZM62.2254 405.448C62.1776 413.034 63.956 416.651 66.8698 416.651C69.7837 416.651 71.3637 412.879 71.3637 405.342C71.3637 398.01 69.8315 394.14 66.8151 394.14C64.0586 394.14 62.1776 397.757 62.2254 405.448Z"
+                    fill="#EF9C4E" />
+                <path
+                    d="M95.8783 421.952V414.056H81.6442V409.015L93.7989 388.845H102.992V408.247H106.843V414.056H102.992V421.952H95.8783ZM95.8783 408.247V400.915C95.8783 398.927 95.974 396.889 96.1245 394.753H95.9261C94.8864 396.889 94.0451 398.828 92.9576 400.915L88.662 408.148V408.247H95.8783Z"
+                    fill="#EF9C4E" />
+                <path
+                    d="M131.193 517.966C131.193 528.203 127.192 535.232 118.991 535.232C110.687 535.232 107.034 527.54 106.986 518.171C106.986 508.597 110.94 501.011 119.244 501.011C127.828 501.011 131.193 508.907 131.193 517.966ZM114.538 518.171C114.49 525.756 116.268 529.373 119.182 529.373C122.096 529.373 123.676 525.601 123.676 518.065C123.676 510.733 122.144 506.862 119.127 506.862C116.364 506.869 114.49 510.486 114.538 518.171Z"
+                    fill="#EF9C4E" />
+                <path
+                    d="M156.344 507.934H143.895L143.204 513.024C143.895 512.918 144.49 512.918 145.277 512.918C148.341 512.918 151.453 513.63 153.724 515.315C156.145 516.993 157.63 519.743 157.63 523.613C157.63 529.775 152.493 535.224 143.847 535.224C139.941 535.224 136.679 534.308 134.9 533.342L136.234 527.533C137.664 528.245 140.584 529.161 143.498 529.161C146.61 529.161 149.921 527.632 149.921 524.121C149.921 520.708 147.301 518.622 140.879 518.622C139.1 518.622 137.862 518.72 136.528 518.925L138.656 501.561H156.344V507.934Z"
+                    fill="#EF9C4E" />
+                <defs>
+                    <filter id="filter0_d" x="0.538574" y="0.05896" width="219.421" height="593.016" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                        <feOffset dy="4" />
+                        <feGaussianBlur stdDeviation="2" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.2875 0 0 0 0 0.280313 0 0 0 0 0.280313 0 0 0 0.15 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                    </filter>
+                    <linearGradient id="paint0_linear" x1="110.249" y1="0.05896" x2="110.249" y2="585.075"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#F2C656" />
+                        <stop offset="1" stop-color="#EF9C4E" />
+                    </linearGradient>
+                </defs>
+            </svg>
+
+        </div>
+
+        <div class="steps__mobile">
+            
+            <img src="./images/2.svg" alt="">
+                
+        </div>
+            
+    </section>
+    <!-- ./Steps -->
+
+    <!-- Our Team -->
+    <section class="team section" id="team">
+        <div class="team__title section__title">наша команда</div>
+
+        <div class="team__wrapper">
+            <div class="team__slider">
+
+                <!-- Slider itself -->
+                <div class="team-button-prev">
+                    <div>
+                        <svg width="31" height="51" viewBox="0 0 31 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27.7227 2.5L14.1125 26.0002L27.7227 48.9352" stroke="#EF9C4E" stroke-width="6" stroke-linejoin="bevel"/>
+                            <path d="M16.7227 2.5L3.1125 26.0002L16.7227 48.9352" stroke="#EF9C4E" stroke-width="6" stroke-linejoin="bevel"/>
+                        </svg>                            
+                    </div>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper-container" id="team-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                        
+                        <div class="swiper-slide">
+                            <div class="member-outer">
+                                <div class="member">
+                                    <div class="member__image">
+                                        <picture>
+                                            <source srcset="./images/team-1.webp" type="image/webp">
+                                            <source srcset="./images/team-1.jpg" type="image/jpg"> 
+                                            <img src="./images/team-1.jpg" alt="Абкеримова Наджие Саидовна">
+                                        </picture>
+                                    </div>
+                                    <div class="member__content">
+                                        <div class="member__name">Евгений <br> Шайдецкий</div>
+                                        <div class="member__occupation">
+                                            <p>Преподаватель</p>
+                                        </div>
+                                        <div class="member__description">
+                                            Ответственный за процесс улучшения качества преподавания, в чем имеет опыт уже более двух лет. Завоевал второе место в основной категории ВРО 2019 г. Симферополь
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="member-outer">
+                                <div class="member">
+                                    <div class="member__image">
+                                        <picture>
+                                            <source srcset="./images/team-2.webp" type="image/webp">
+                                            <source srcset="./images/team-2.jpg" type="image/jpg"> 
+                                            <img src="./images/team-2.jpg" alt="Абкеримова Наджие Саидовна">
+                                        </picture>
+                                    </div>
+                                    <div class="member__content">
+                                        <div class="member__name">Абкеримова Наджие <br> Саидовна</div>
+                                        <div class="member__occupation">
+                                            <p>Руководитель, тренер, преподаватель</p>
+                                        </div>
+                                        <div class="member__description">
+                                            Высшее: КФУ им. В.И. Вернадского, факультет математики и информатики,
+                                            Прикладная математика и информатика
+                                            Занятия: We.do 2.0
+                                            Хобби: спорт, путешествия, психология
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="member-outer">
+                                <div class="member">
+                                    <div class="member__image">
+                                        <picture>
+                                            <source srcset="./images/team-3.webp" type="image/webp">
+                                            <source srcset="./images/team-3.jpg" type="image/jpg"> 
+                                            <img src="./images/team-3.jpg" alt="Абкеримова Наджие Саидовна">
+                                        </picture>
+                                    </div>
+                                    <div class="member__content">
+                                        <div class="member__name">Валерий <br> Бахов</div>
+                                        <div class="member__occupation">
+                                            <p>Преподаватель</p>
+                                        </div>
+                                        <div class="member__description">
+                                            Составляет стратегии развития и новаторства. Преподает более двух лет и уже имеет титул бронзового призера в творческой категории ВРО 2019 г. Симферополь
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="member-outer">
+                                <div class="member">
+                                    <div class="member__image">
+                                        <picture>
+                                            <source srcset="./images/team-4.webp" type="image/webp">
+                                            <source srcset="./images/team-4.jpg" type="image/jpg"> 
+                                            <img src="./images/team-4.jpg" alt="Абкеримова Наджие Саидовна">
+                                        </picture>
+                                    </div>
+                                    <div class="member__content">
+                                        <div class="member__name">Тян Николай <br> Геннадьевич</div>
+                                        <div class="member__occupation">
+                                            <p>Руководитель</p>
+                                        </div>
+                                        <div class="member__description">
+                                            <strong>Высшее:</strong> СевГУ, факультет Радиоэлектроники, <br>
+                                            <strong>Высшее:</strong> Glyndwr University, Electrical and electronic engineering <br>
+                                            <strong>Хобби:</strong>походы, спорт, музыка
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="member-outer">
+                                <div class="member">
+                                    <div class="member__image">
+                                        <picture>
+                                            <source srcset="./images/team-5.webp" type="image/webp">
+                                            <source srcset="./images/team-5.jpg" type="image/jpg"> 
+                                            <img src="./images/team-5.jpg" alt="Абкеримова Наджие Саидовна">
+                                        </picture>
+                                    </div>
+                                    <div class="member__content">
+                                        <div class="member__name">Кабанов Александр <br> Николаевич</div>
+                                        <div class="member__occupation">
+                                            <p>Преподаватель</p>
+                                        </div>
+                                        <div class="member__description">
+                                            <strong>Высшее:</strong> Харьковский национальный автомобильно-дорожный университет, кандидат технических наук<br>
+                                            <strong>Занятия:</strong> Lego Mindstorms, Web-программирование<br>
+                                            <strong>Хобби:</strong>путешествия, походы, чтение, научно-популярная литература
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="member-outer">
+                                <div class="member">
+                                    <div class="member__image">
+                                        <picture>
+                                            <source srcset="./images/team-6.webp" type="image/webp">
+                                            <source srcset="./images/team-6.jpg" type="image/jpg"> 
+                                            <img src="./images/team-6.jpg" alt="Абкеримова Наджие Саидовна">
+                                        </picture>
+                                    </div>
+                                    <div class="member__content">
+                                        <div class="member__name">Шевченко Екатерина <br> Андреевна</div>
+                                        <div class="member__occupation">
+                                            <p>Преподаватель</p>
+                                        </div>
+                                        <div class="member__description">
+                                            <strong>Высшее:</strong>Херсонский технический университет, Инженер по системам управления и автоматики Ровенский государственной университет, учитель физики<br>
+                                            <strong>Занятия:</strong> Lego Mindstorms, Lego Wedo, Web-программирование, Компьютерная граммотность<br>
+                                            <strong>Хобби:</strong>путешествия, походы, чтение, рукоделие, психология
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="member-outer">
+                                <div class="member">
+                                    <div class="member__image">
+                                        <picture>
+                                            <source srcset="./images/team-7.webp" type="image/webp">
+                                            <source srcset="./images/team-7.jpg" type="image/jpg"> 
+                                            <img src="./images/team-7.jpg" alt="Абкеримова Наджие Саидовна">
+                                        </picture>
+                                    </div>
+                                    <div class="member__content">
+                                        <div class="member__name">Шевченко Анастасия<br> Андреевна</div>
+                                        <div class="member__occupation">
+                                            <p>Администратор, преподаватель</p>
+                                        </div>
+                                        <div class="member__description">
+                                            <strong>Высшее:</strong> Ростовский государственный экономический университет РГЭУ(РИНХ), специалист международной торговли и таможенного дела.<br>
+                                            <strong>Занятия:</strong> Scratch, Lego WeDo<br>
+                                            <strong>Хобби:</strong> путешествия, езда на автомобиле, чтение, создание украшений своими руками
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+                
+                <div class="team-button-next">
+                    <div>
+                        <svg width="31" height="51" viewBox="0 0 31 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.2229 2.5L16.8331 26.0002L3.22289 48.9352" stroke="#EF9C4E" stroke-width="6" stroke-linejoin="bevel"/>
+                            <path d="M14.2227 2.5L27.8328 26.0002L14.2226 48.9352" stroke="#EF9C4E" stroke-width="6" stroke-linejoin="bevel"/>
+                        </svg>                            
+                    </div>                    
+                </div>
+                <!-- ./Slider itself -->
+
+            </div>
+        </div>
+    </section>
+    <!-- ./Our Team -->
+
+    <!-- Certificate -->
+    <section class="certificate section">
+        <div class="certificate__figure">
+            <picture>
+                <source srcset="./images/back.webp" type="image/webp">
+                <img src="./images/back.png" alt="">
+            </picture>
+        </div>
+        <div class="certificate__figure">
+            <picture>
+                <source srcset="./images/back.webp" type="image/webp">
+                <img src="./images/back.png" alt="">
+            </picture>
+        </div>
+        <div class="certificate__figure">
+            <picture>
+                <source srcset="./images/back.webp" type="image/webp">
+                <img src="./images/back.png" alt="">
+            </picture>
+        </div>
+
+
+        <div class="certificar__title section__title">По окончании курса выдается <span>сертификат</span></div>
+
+        <div class="certificate__wrapper lContainer">
+            <div class="certificate__image">
+                <picture>
+                    <source srcset="./images/certificate.webp" type="image/webp">
+                    <img src="./images/certificate.jpg" alt="Сертификат об успешном окончании курса - Роботёнок">
+                </picture>
+            </div>
+
+            <div>
+                <button class="certificate__button md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3">Получить такой же</button>
+            </div>
+
+            <svg class="certificate__scroll" width="39" height="27" viewBox="0 0 39 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M36.0962 2.18433L19.3701 13.4437L3.04629 2.18432" stroke="#EF9C4E" stroke-width="4.23079" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M36.0962 12.9395L19.3701 24.1993L3.04629 12.9394" stroke="#EF9C4E" stroke-width="4.23079" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+                
+        </div>
+    </section>
+    <!-- ./Certificate -->
+
+    <!-- PhotoGallery -->
+    <div class="photogallery section" id="gallery">
+        <div class="photogallery__title section__title">фотогалерея</div>
+        
+        <div class="photogallery__wrapper">
+
+            <div class="photogallery-button-prev">
+                <div>
+                    <svg width="31" height="51" viewBox="0 0 31 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27.7227 2.5L14.1125 26.0002L27.7227 48.9352" stroke="#EF9C4E" stroke-width="6" stroke-linejoin="bevel"/>
+                        <path d="M16.7227 2.5L3.1125 26.0002L16.7227 48.9352" stroke="#EF9C4E" stroke-width="6" stroke-linejoin="bevel"/>
+                    </svg>                            
+                </div>
+            </div>
+
+            <!-- Slider main container -->
+            <div class="swiper-container" id="photogallery-slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="./images/photogallery-1.webp" type="image/webp">
+                            <img src="./images/photogallery-1.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="./images/photogallery-2.webp" type="image/webp">
+                            <img src="./images/photogallery-2.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="./images/photogallery-3.webp" type="image/webp">
+                            <img src="./images/photogallery-3.jpg" alt="">
+                        </picture>
+                    </div>    
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination photogallry__pagination"></div>
+            
+            </div>
+
+            <div class="photogallery-button-next">
+                <div>
+                    <svg width="31" height="51" viewBox="0 0 31 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.2229 2.5L16.8331 26.0002L3.22289 48.9352" stroke="#EF9C4E" stroke-width="6" stroke-linejoin="bevel"/>
+                        <path d="M14.2227 2.5L27.8328 26.0002L14.2226 48.9352" stroke="#EF9C4E" stroke-width="6" stroke-linejoin="bevel"/>
+                    </svg>                            
+                </div>                    
+            </div>
+
+        </div>
+    </div>
+    <!-- ./PhotoGallery -->
+
+    <!-- Reviews -->
+    <div class="reviews section" id="reviews">
+        <div class="reviews__figure">
+            <img src="./images/rectangles-left.svg" alt="">
+        </div>
+        <div class="reviews__figure">
+            <img src="./images/rectangles-left.svg" alt="">
+        </div>
+        <div class="reviews__title section__title">отзывы</div>
+
+        <div class="reviews__wrapper lContainer">
+            <img class="reviews__bg" id="reviews__bg" src="./images/reviews.png" alt="">
+            <img class="reviews__bg-mobile" id="reviews__bg-mobile" src="./images/reviews-mobile.jpg" alt="">
+
+            <div class="reviews__slider">
+
+                <div class="reviews__header">
+                
+                    <div class="reviews__back">
+                        <img src="./images//chat-icons/002-left-arrow.svg" alt="">
+                    </div>
+    
+                    <div class="reviews__heading">Ваши отзывы</div>
+    
+                    <div class="reviews__more">
+                        <img src="./images/chat-icons/004-more.svg" alt="">
+                    </div>
+                    <div class="reviews__divider"></div>
+                </div>
+
+                <div class="reviews-button-prev">
+                    <div>
+                        <svg width="31" height="51" viewBox="0 0 31 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M27.7227 2.5L14.1125 26.0002L27.7227 48.9352" stroke="#EF9C4E" stroke-width="6" stroke-linejoin="bevel"/>
+                            <path d="M16.7227 2.5L3.1125 26.0002L16.7227 48.9352" stroke="#EF9C4E" stroke-width="6" stroke-linejoin="bevel"/>
+                        </svg>                            
+                    </div>
+                </div>
+    
+                <!-- Slider main container -->
+                <div class="swiper-container" id="reviews-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                        <div class="swiper-slide">
+                                
+                            <div class="review">
+                                <div class="review__avatar">
+                                    <picture>
+                                        <source srcset="./images/avatar-1.webp" type="image/webp">
+                                        <img src="./images/avatar-1.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="review__name">Светлана Ивановна</div>
+                                <div class="review__text">Ребенок в восторге, каждый раз приходит и рассказывает что-то новенькое. Сегодня говорил о каких-то ультразвуковых датчиках) спасибо</div>
+                                <div class="review__date">21 сен 2020 в 10:34 <span class="reply">Ответить</span> <span class="like"><svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg></span></div>
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            
+                            <div class="review">
+                                <div class="review__avatar">
+                                    <picture>
+                                        <source srcset="./images/avatar-2.webp" type="image/webp">
+                                        <img src="./images/avatar-2.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="review__name">Владислав Гатилов</div>
+                                <div class="review__text">Вчера были у вас на региональных соревнованиях. Хотим выразить благодарность от всей ЛигиРоботов Симферополь за хорошую организацию и проведение соревнований. <br> Ребятам очень понравилось.</div>
+                                <div class="review__date">26 авг 2020 в 15:31 <span class="reply">Ответить</span> <span class="like"><svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg></span></div>
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                          
+                            <div class="review">
+                                <div class="review__avatar">
+                                    <picture>
+                                        <source srcset="./images/avatar-3.webp" type="image/webp">
+                                        <img src="./images/avatar-3.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="review__name">Лейля Османова</div>
+                                <div class="review__text">Школа, благодарим Вас, за то, что Вы теперь у нас есть! Мы нашли школу, где учат тому, чем очень сильно увлекается наш ребенок! <br> Спасибо Вам огромное и успехов в работе!</div>
+                                <div class="review__date">15 июля 2020 в 16:02 <span class="reply">Ответить</span> <span class="like"><svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg></span></div>
+
+                            </div>
+
+                        </div>   
+                        <div class="swiper-slide">
+                          
+                            <div class="review">
+                                <div class="review__avatar">
+                                    <picture>
+                                        <source srcset="./images/avatar-4.webp" type="image/webp">
+                                        <img src="./images/avatar-4.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="review__name">Олеся Письмак</div>
+                                <div class="review__text">Школа, это точно, что-то новенькое, будем ждать конкурс. Ребенку нравиться у Вас учиться, а тут еще будем и призы выигрывать <br> 👍👍👍👍👍</div>
+                                <div class="review__date">15 июля 2020 в 16:02 <span class="reply">Ответить</span> <span class="like"><svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg></span></div>
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                          
+                            <div class="review">
+                                <div class="review__avatar">
+                                    <picture>
+                                        <source srcset="./images/avatar-5.webp" type="image/webp">
+                                        <img src="./images/avatar-5.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="review__name">Маша Халанова</div>
+                                <div class="review__text">Очень интересно проходят занятия, сынуле очень нравится, спасибоо большое за интересное, развивающие занятия</div>
+                                <div class="review__date">17 ноя 2020 в 21:26 <span class="reply">Ответить</span> <span class="like"><svg viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg></span></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination photogallry__pagination"></div>
+                
+                </div>
+    
+                <div class="reviews-button-next">
+                    <div>
+                        <svg width="31" height="51" viewBox="0 0 31 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.2229 2.5L16.8331 26.0002L3.22289 48.9352" stroke="#EF9C4E" stroke-width="6" stroke-linejoin="bevel"/>
+                            <path d="M14.2227 2.5L27.8328 26.0002L14.2226 48.9352" stroke="#EF9C4E" stroke-width="6" stroke-linejoin="bevel"/>
+                        </svg>                            
+                    </div>                    
+                </div>
+
+                <div class="reviews__chat">
+                    <div class="reviews__divider"></div>
+
+                    <div class="chat__part">
+                        <div class="reviews__clip">
+                            <img src="./images/chat-icons/006-paperclip.svg" alt="">
+                        </div>
+    
+                        <div class="reviews__chatMessage">Сообщение</div>    
+                    </div>
+
+                    <div class="chat__part">
+                        <div class="reviews__emoji">
+                            <img src="./images/chat-icons/005-happy.svg" alt="">
+                        </div>
+    
+                        <div class="reviews__send">
+                            <img src="./images/chat-icons/001-send.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    <!-- ./Reviews -->
+
+    <!-- Addresses -->
+    <div class="addresses section" id="locations">
+        <div class="addresses__title section__title">адреса</div>
+        
+        <div class="addresses__wrapper lContainer">
+
+            <div class="addresses__map">
+                <!-- Map -->
+                <div class="map" id="map"></div>
+                <!-- ./Map -->
+            </div>
+
+            <div class="addresses__cities">
+                <ul>
+                    <li class="city">
+                        <div class="city__wrapper">
+                            <div class="city__ico">
+                                <svg width="35" height="37" viewBox="0 0 35 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d)">
+                                    <path d="M17.5 2.1875C20.981 2.1875 24.3194 3.57031 26.7808 6.03172C29.2422 8.49314 30.625 11.8315 30.625 15.3125C30.625 21.5841 26.3922 27.3569 18.0862 32.6419C17.911 32.7532 17.7076 32.8123 17.5 32.8123C17.2924 32.8123 17.089 32.7532 16.9137 32.6419C8.60781 27.3569 4.375 21.5841 4.375 15.3125C4.375 11.8315 5.75781 8.49314 8.21922 6.03172C10.6806 3.57031 14.019 2.1875 17.5 2.1875V2.1875ZM17.5 10.9375C16.3397 10.9375 15.2269 11.3984 14.4064 12.2189C13.5859 13.0394 13.125 14.1522 13.125 15.3125C13.125 16.4728 13.5859 17.5856 14.4064 18.4061C15.2269 19.2266 16.3397 19.6875 17.5 19.6875C18.6603 19.6875 19.7731 19.2266 20.5936 18.4061C21.4141 17.5856 21.875 16.4728 21.875 15.3125C21.875 14.1522 21.4141 13.0394 20.5936 12.2189C19.7731 11.3984 18.6603 10.9375 17.5 10.9375V10.9375Z" fill="url(#paint0_linear)"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d" x="-2" y="0" width="39" height="39" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                    <feOffset dy="2"/>
+                                    <feGaussianBlur stdDeviation="1"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0.00815973 0 0 0 0 0.150118 0 0 0 0 0.195833 0 0 0 0.2 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                    </filter>
+                                    <linearGradient id="paint0_linear" x1="14.6282" y1="36.3419" x2="22.0169" y2="-0.641143" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#EF9C4E"/>
+                                    <stop offset="1" stop-color="#F2C656"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>                                
+                            </div>
+                            <div class="city__info">
+                                <div class="city__name city-location" data-coords="44.977950, 34.099006">г. СИМФЕРОПОЛЬ</div>
+                                <div class="city__street city-location" data-coords="44.977950, 34.099006">
+                                    <img class="mobile-ico" src="./images/mobile-map-ico.svg" alt="">                                      
+                                    <span>ул. Смольная, 25А</span>
+                                </div>
+                                <a href="tel:+7 (978) 923- 12-34" class="city__phone">+7 (978) 923- 12-34</a>
+                                
+                            </div>
+                        </div>
+                        
+                        <button class="city__button md-trigger button button--moema button--inverted button--text-thick button--size-s" data-modal="modal-3" data-city="Симферополь">Записаться</button>
+                    </li>
+                    <li class="city">
+                        <div class="city__wrapper">
+                            <div class="city__ico">
+                                <svg width="35" height="37" viewBox="0 0 35 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d)">
+                                    <path d="M17.5 2.1875C20.981 2.1875 24.3194 3.57031 26.7808 6.03172C29.2422 8.49314 30.625 11.8315 30.625 15.3125C30.625 21.5841 26.3922 27.3569 18.0862 32.6419C17.911 32.7532 17.7076 32.8123 17.5 32.8123C17.2924 32.8123 17.089 32.7532 16.9137 32.6419C8.60781 27.3569 4.375 21.5841 4.375 15.3125C4.375 11.8315 5.75781 8.49314 8.21922 6.03172C10.6806 3.57031 14.019 2.1875 17.5 2.1875V2.1875ZM17.5 10.9375C16.3397 10.9375 15.2269 11.3984 14.4064 12.2189C13.5859 13.0394 13.125 14.1522 13.125 15.3125C13.125 16.4728 13.5859 17.5856 14.4064 18.4061C15.2269 19.2266 16.3397 19.6875 17.5 19.6875C18.6603 19.6875 19.7731 19.2266 20.5936 18.4061C21.4141 17.5856 21.875 16.4728 21.875 15.3125C21.875 14.1522 21.4141 13.0394 20.5936 12.2189C19.7731 11.3984 18.6603 10.9375 17.5 10.9375V10.9375Z" fill="url(#paint0_linear)"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d" x="-2" y="0" width="39" height="39" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                    <feOffset dy="2"/>
+                                    <feGaussianBlur stdDeviation="1"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0.00815973 0 0 0 0 0.150118 0 0 0 0 0.195833 0 0 0 0.2 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                    </filter>
+                                    <linearGradient id="paint0_linear" x1="14.6282" y1="36.3419" x2="22.0169" y2="-0.641143" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#EF9C4E"/>
+                                    <stop offset="1" stop-color="#F2C656"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>                                
+                            </div>
+                            <div class="city__info">
+                                <div class="city__name city-location" data-coords="45.711863, 34.398675">г. ДЖАНКОЙ</div>
+                                <div class="city__street city-location" data-coords="45.711863, 34.398675">
+                                    <img class="mobile-ico" src="./images/mobile-map-ico.svg" alt="">
+                                    <span>ул. Октябрьская, 65</span>
+                                </div>
+                                <a href="tel:+7 (978) 104-00-24" class="city__phone">+7 (978) 104-00-24</a>
+                            </div>
+                        </div>
+                        
+                        <button class="city__button md-trigger button button--moema button--inverted button--text-thick button--size-s" data-modal="modal-3" data-city="Джанкой">Записаться</button>
+                    </li>
+                    <li class="city">
+                        <div class="city__wrapper">
+                            <div class="city__ico">
+                                <svg width="35" height="37" viewBox="0 0 35 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d)">
+                                    <path d="M17.5 2.1875C20.981 2.1875 24.3194 3.57031 26.7808 6.03172C29.2422 8.49314 30.625 11.8315 30.625 15.3125C30.625 21.5841 26.3922 27.3569 18.0862 32.6419C17.911 32.7532 17.7076 32.8123 17.5 32.8123C17.2924 32.8123 17.089 32.7532 16.9137 32.6419C8.60781 27.3569 4.375 21.5841 4.375 15.3125C4.375 11.8315 5.75781 8.49314 8.21922 6.03172C10.6806 3.57031 14.019 2.1875 17.5 2.1875V2.1875ZM17.5 10.9375C16.3397 10.9375 15.2269 11.3984 14.4064 12.2189C13.5859 13.0394 13.125 14.1522 13.125 15.3125C13.125 16.4728 13.5859 17.5856 14.4064 18.4061C15.2269 19.2266 16.3397 19.6875 17.5 19.6875C18.6603 19.6875 19.7731 19.2266 20.5936 18.4061C21.4141 17.5856 21.875 16.4728 21.875 15.3125C21.875 14.1522 21.4141 13.0394 20.5936 12.2189C19.7731 11.3984 18.6603 10.9375 17.5 10.9375V10.9375Z" fill="url(#paint0_linear)"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d" x="-2" y="0" width="39" height="39" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                    <feOffset dy="2"/>
+                                    <feGaussianBlur stdDeviation="1"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0.00815973 0 0 0 0 0.150118 0 0 0 0 0.195833 0 0 0 0.2 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                    </filter>
+                                    <linearGradient id="paint0_linear" x1="14.6282" y1="36.3419" x2="22.0169" y2="-0.641143" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#EF9C4E"/>
+                                    <stop offset="1" stop-color="#F2C656"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>                                
+                            </div>
+                            <div class="city__info">
+                                <div class="city__name city-location" data-coords="45.355953, 36.469409">г. КЕРЧЬ</div>
+                                <div class="city__street city-location" data-coords="45.355953, 36.469409">
+                                    <img class="mobile-ico" src="./images/mobile-map-ico.svg" alt="">
+                                    <span>ул. Советская, 20</span>
+                                </div>
+                                
+                                <a href="tel:+7 (978) 104-00-24" class="city__phone">+7 (978) 104-00-24</a>
+                            </div>
+                        </div>
+                        
+                        <button class="city__button md-trigger button button--moema button--inverted button--text-thick button--size-s" data-modal="modal-3" data-city="Керчь">Записаться</button>
+                    </li>
+                    <li class="city">
+                        <div class="city__wrapper">
+                            <div class="city__ico">
+                                <svg width="35" height="37" viewBox="0 0 35 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d)">
+                                    <path d="M17.5 2.1875C20.981 2.1875 24.3194 3.57031 26.7808 6.03172C29.2422 8.49314 30.625 11.8315 30.625 15.3125C30.625 21.5841 26.3922 27.3569 18.0862 32.6419C17.911 32.7532 17.7076 32.8123 17.5 32.8123C17.2924 32.8123 17.089 32.7532 16.9137 32.6419C8.60781 27.3569 4.375 21.5841 4.375 15.3125C4.375 11.8315 5.75781 8.49314 8.21922 6.03172C10.6806 3.57031 14.019 2.1875 17.5 2.1875V2.1875ZM17.5 10.9375C16.3397 10.9375 15.2269 11.3984 14.4064 12.2189C13.5859 13.0394 13.125 14.1522 13.125 15.3125C13.125 16.4728 13.5859 17.5856 14.4064 18.4061C15.2269 19.2266 16.3397 19.6875 17.5 19.6875C18.6603 19.6875 19.7731 19.2266 20.5936 18.4061C21.4141 17.5856 21.875 16.4728 21.875 15.3125C21.875 14.1522 21.4141 13.0394 20.5936 12.2189C19.7731 11.3984 18.6603 10.9375 17.5 10.9375V10.9375Z" fill="url(#paint0_linear)"/>
+                                    </g>
+                                    <defs>
+                                    <filter id="filter0_d" x="-2" y="0" width="39" height="39" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                    <feOffset dy="2"/>
+                                    <feGaussianBlur stdDeviation="1"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0.00815973 0 0 0 0 0.150118 0 0 0 0 0.195833 0 0 0 0.2 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                    </filter>
+                                    <linearGradient id="paint0_linear" x1="14.6282" y1="36.3419" x2="22.0169" y2="-0.641143" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#EF9C4E"/>
+                                    <stop offset="1" stop-color="#F2C656"/>
+                                    </linearGradient>
+                                    </defs>
+                                </svg>                                
+                            </div>
+                            <div class="city__info">
+                                <div class="city__name city-location city-location" data-coords="44.577843, 33.457843">г. СЕВАСТОПОЛЬ</div>
+                                <div class="city__street city-location city-location" data-coords="44.577843, 33.457843">
+                                    <img class="mobile-ico" src="./images/mobile-map-ico.svg" alt="">
+                                    <span>ул. Тараса Шевченко, 28</span>
+                                </div>
+                                <a href="tel:+7 (978) 104-00-24" class="city__phone">+7 (978) 104-00-24</a>
+                            </div>
+                        </div>
+                       
+                        <button class="city__button md-trigger button button--moema button--inverted button--text-thick button--size-s" data-modal="modal-3" data-city="Севастополь">Записаться</button>
+                    </li>
+                </ul>
+
+                <button class="addresses__button md-trigger" data-modal="modal-3">Записаться</button>
+
+            </div>
+
+        </div>
+        
+    </div>
+    <!-- ./Adresses -->
+
+    <!-- Order -->
+    <div class="order section" id="order-form">
+        <div class="order__title section__title">записаться на пробный урок</div>
+
+        <div class="order__wrapper lContainer">
+            <div class="order__description">
+                <div class="order__text">Мы расскажем подробнее о курсах</div>
+
+                <svg width="51" height="31" viewBox="0 0 51 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M48.5 3L24.9998 16.6102L2.06477 2.99999" stroke="#EF9C4E" stroke-width="6" stroke-linejoin="bevel"/>
+                    <path d="M48.5 14L24.9998 27.6102L2.06477 14" stroke="#EF9C4E" stroke-width="6" stroke-linejoin="bevel"/>
+                </svg>
+
+                <div class="order__text">Ребята познакомятся друг с другом и с преподавателями</div>
+                    
+                <svg width="51" height="31" viewBox="0 0 51 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M48.5 3L24.9998 16.6102L2.06477 2.99999" stroke="#EF9C4E" stroke-width="6" stroke-linejoin="bevel"/>
+                    <path d="M48.5 14L24.9998 27.6102L2.06477 14" stroke="#EF9C4E" stroke-width="6" stroke-linejoin="bevel"/>
+                </svg>
+                
+                <div class="order__text">В конце занятия ребята запрограммируют и соберут своего первого робота!</div>
+
+                <svg width="51" height="31" viewBox="0 0 51 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M48.5 3L24.9998 16.6102L2.06477 2.99999" stroke="#EF9C4E" stroke-width="6" stroke-linejoin="bevel"/>
+                    <path d="M48.5 14L24.9998 27.6102L2.06477 14" stroke="#EF9C4E" stroke-width="6" stroke-linejoin="bevel"/>
+                </svg>
+
+                <div class="order__text">Остались вопросы? Позвоните!</div>
+
+                <div class="order__button button button--moema">
+                    <svg width="38" height="36" viewBox="0 0 38 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.0756 20.7669C19.8364 24.3268 24.1935 27.7337 25.9159 26.1022C28.3796 23.7687 29.9001 21.7345 35.3358 25.8727C40.7691 30.0087 36.5949 32.7675 34.2073 35.0267C31.4514 37.637 21.1787 35.1663 11.0247 25.5509C0.873154 15.9333 -1.72829 6.20321 1.02995 3.59291C3.41758 1.32915 6.316 -2.6223 10.6826 2.52404C15.0516 7.67038 12.9063 9.11054 10.4379 11.4463C8.72263 13.0777 12.3171 17.2047 16.0756 20.7669Z" fill="#EFF8F9"/>
+                    </svg>                        
+                    +7 (978) 104-00-24
+                </div>
+            </div>
+
+            <div class="order__form">
+
+                <form action="" class="form">
+                    <div class="form__title">оставьте заявку </div>
+                    <div class="form__subtitle">Чтобы записаться на бесплатный пробный  урок, просто заполните форму</div>
+
+                    <div class="form__input">
+                        <input type="text" name="name" id="name" placeholder="Имя ребенка" required>
+                    </div>
+
+                    <div class="form__input">
+                        <input type="text" name="age" id="age" placeholder="Возраст" required>
+                    </div>
+
+                    <div class="form__input">
+                        <input type="text" name="phone" id="phone" placeholder="Телефон" required>
+                    </div>
+
+
+
+                    <div class="form__check">
+                        <input type="checkbox" name="agree" id="agree" required>
+                        <label for="agree">Даю согласие на обработку персональных данных</label>
+                    </div>
+
+                    <button class="form__button button button--moema button--inverted button--text-thick button--size-s">записаться</button>
+                    <!-- Form Result -->
+                    <div class="form__result">
+                        <div class="form__message"></div>
+                    </div>
+                    <!-- ./Form Result -->
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- ./Order -->
+
+    @@include('./footer.html')
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

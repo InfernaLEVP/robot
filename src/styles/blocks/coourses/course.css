@@ -1,0 +1,393 @@
+.course{
+    background: #FFFFFF;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+
+    width: calc(33.33% - 15px);
+
+    padding: 22px 24px 20px 24px;
+    --height: 0;
+    margin-bottom: 28px;
+}
+@media(max-width: 992px){
+    .course{
+        width: 100%;
+    }
+}
+
+/*  */
+.course__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-height: 107px;
+    min-height: 107px;
+}
+@media(max-width: 992px){
+    .course__head{
+        max-height: initial;
+        min-height: initial;
+    }
+}
+
+/*  */
+.course__name{
+    width: 45%;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    position: relative;
+}
+.course__name span{
+    white-space: nowrap;
+}
+@media(max-width: 1200px){
+    .course__name{
+        width: 65%;
+        font-size: 19px;
+    }
+}
+@media(max-width: 992px){
+    .course__name{
+        font-size: 24px;
+        line-height: 27px;
+        /* transform: translateY(-5px); */
+    }
+}
+@media(max-width: 375px){
+    .course__name{
+        font-size: 21px;
+        line-height: 25px;
+        /* transform: translateY(-11px); */
+    }
+}
+@media(max-width: 350px){
+    .course__name{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 10px;
+        /* transform: translateY(-18px); */
+    }
+}
+
+/*  */
+.course__image{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.course__image picture{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+@media(max-width: 1200px){
+    .course__image{
+        width: 35%;
+    }
+}
+@media(max-width: 992px){
+    .course__image{
+        /* transform: translateY(-5px); */
+        width: 55%;
+    }
+}
+@media(max-width: 375px){
+    .course__image{
+        /* transform: translateY(-11px); */
+    }
+}
+@media(max-width: 350px){
+    .course__image{
+        /* transform: translateY(-18px); */
+    }
+}
+
+/*  */
+.course__description{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    transform: translateY(-9px);
+
+    min-height: 156px;
+}
+.course__description p{
+    margin: 0;
+}
+@media(max-width: 1200px){
+    .course__description{
+        font-size: 15px;
+    }
+}
+@media(max-width: 992px){
+    .course__description{
+        font-size: 17px;
+        line-height: 21px;
+        min-height: initial;
+        transform: translateY(0px);
+        margin-top: 7px;
+        /* transform: translateY(-17px); */
+    }
+}
+@media(max-width: 375px){
+    .course__description{
+        font-size: 15px;
+        line-height: 19px;
+        min-height: initial;
+        /* transform: translateY(-27px); */
+    }
+}
+@media(max-width: 350px){
+    .course__description{
+        font-size: 12.0202px;
+        line-height: 16px;
+        margin-top: 10px;
+        /* transform: translateY(-39px); */
+    }
+}
+
+/*  */
+.course__pitch{
+    height: 0;
+    overflow: hidden;
+    transition: height .2s;
+    font-weight: bold;
+    position: relative;
+}
+.course__pitch.opened{
+    height: var(--height);
+    padding-top: 10px;
+}
+.course__pitch .course__order{
+    margin-top: 15px;
+    width: 100%;
+}
+.course__pitch .course__order span{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    padding: 16px 29px;
+}
+.close-pitch{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    cursor: pointer;
+
+    display: none;
+}
+.close-pitch svg{
+    pointer-events: none;
+}
+@media(max-width: 992px){
+    .course__pitch{
+        font-size: 13.0202px;
+        line-height: 16px;
+    }
+    .course__pitch p{
+        padding-right: 10px;
+    }
+    .course__pitch .course__order span{
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 15px;
+        line-height: 20px;
+        text-transform: uppercase;
+        padding: 10px 29px;
+    }
+}
+
+/*  */
+.course__order{
+    background: linear-gradient(9.72deg, #EF9C4E -4.13%, #F2C656 103.09%);
+    border-radius: 5px;
+    border: none;
+    padding: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+.course__order span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 29px;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+@media(max-width: 1200px){
+    .course__order span{
+        font-size: 11px;
+        padding: 6px 16px;
+    }
+}
+@media(max-width: 992px){
+    .course__order{
+    }
+    .course__order span{
+        font-size: 10.68012px;
+        line-height: 11px;
+    }
+}
+@media(max-width: 375px){
+    .course__order{
+    }
+    .course__order span{
+        font-size: 9.68012px;
+        line-height: 11px;
+    }
+}
+@media(max-width: 350px){
+    .course__order{
+    }
+    .course__order span{
+        font-size: 8px;
+        line-height: 10px;
+        padding: 5px 20px;
+    }
+}
+
+/*  */
+.course__actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+@media(max-width: 992px){
+    .course__actions{
+
+    }
+}
+@media(max-width: 375px){
+    .course__actions{
+        margin-top: 20px;
+    }
+}
+
+/*  */
+.course__details{
+    background: linear-gradient(9.72deg, #EF9C4E -4.13%, #F2C656 103.09%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+.course__details span{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 29px;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+@media(max-width: 1200px){
+    .course__details span{
+        font-size: 11px;
+        padding: 6px 16px;
+    }
+}
+@media(max-width: 992px){
+    .course__details{
+        
+    }
+    .course__details span{
+        font-size: 10.68012px;
+        line-height: 11px;
+    }
+}
+@media(max-width: 375px){
+    .course__details{
+        
+    }
+    .course__details span{
+        font-size: 9.68012px;
+        line-height: 11px;
+    }
+}
+@media(max-width: 350px){
+    .course__details{
+        
+    }
+    .course__details span{
+        font-size: 8px;
+        line-height: 10px;
+        padding: 5px 20px;
+    }
+}
+
+/* Courses card images have different % width (by design) */
+@media(max-width: 992px){
+    .corses__list .course:nth-child(1) .course__image img{
+        max-width: 85%;
+        transform: translate(5px, -5px);
+    }
+    .corses__list .course:nth-child(2) .course__image img{
+        max-width: 80%;
+        transform: translate(5px, -5px);
+    }
+    .corses__list .course:nth-child(4) .course__image img{
+        max-width: 75%;
+    }
+    .corses__list .course:nth-child(5) .course__image img{
+        max-width: 70%;
+        transform: translate(5px, -5px);
+    }
+    .corses__list .course:nth-child(8) .course__image img{
+        max-width: 70%;
+        transform: translate(5px, -5px);
+    }
+}
+
+@media(max-width: 375px){
+    .corses__list .course:nth-child(2) .course__image img{
+        max-width: 80%;
+        transform: translate(5px, -5px);
+    }
+    .corses__list .course:nth-child(4) .course__image img{
+        max-width: 75%;
+    }
+    .corses__list .course:nth-child(5) .course__image img{
+        max-width: 70%;
+        transform: translate(5px, -5px);
+    }
+    .corses__list .course:nth-child(8) .course__image img{
+        max-width: 70%;
+        transform: translate(5px, -5px);
+    }
+}
+
+@media(max-width: 350px){
+    .corses__list .course:nth-child(2) .course__image img{
+        max-width: 80%;
+        transform: translate(5px, -5px);
+    }
+    .corses__list .course:nth-child(4) .course__image img{
+        max-width: 75%;
+    }
+    .corses__list .course:nth-child(5) .course__image img{
+        max-width: 70%;
+        transform: translate(5px, -5px);
+    }
+    .corses__list .course:nth-child(8) .course__image img{
+        max-width: 70%;
+        transform: translate(5px, -5px);
+    }
+}

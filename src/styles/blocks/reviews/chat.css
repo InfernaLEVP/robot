@@ -1,0 +1,91 @@
+.reviews__chat{
+    position: absolute;
+    bottom: 22%;
+    width: 80%;
+    padding-left: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.reviews__chat .reviews__divider{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.reviews__chat:after{
+    position: absolute;
+    bottom: -10px;
+    width: 88%;
+    height: 2px;
+    background: grey;
+    content: '';
+}
+@media(max-width: 992px){
+    .reviews__chat{
+        display: none;
+    }
+}
+
+/*  */
+.reviews__clip{
+    
+}
+.reviews__clip img{
+    width: 29px;
+}
+@media(max-width: 992px){
+    .reviews__clip{
+
+    }
+}
+
+/*  */
+.reviews__chatMessage{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: #82858c;
+}
+@media(max-width: 992px){
+    .reviews__chatMessage{
+
+    }
+}
+
+/*  */
+.reviews__emoji{
+    
+}
+.reviews__emoji img{
+    width: 27px;
+    margin-right: 35px;
+}
+@media(max-width: 992px){
+    .reviews__emoji{
+
+    }
+}
+
+/*  */
+.reviews__send{
+    
+}
+.reviews__send img{
+    width: 27px;
+}
+@media(max-width: 992px){
+    .reviews__send{
+
+    }
+}
+
+/*  */
+.chat__part{
+    display: flex;
+}
+@media(max-width: 992px){
+    .chat__part{
+
+    }
+}
