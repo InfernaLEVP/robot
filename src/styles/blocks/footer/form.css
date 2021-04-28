@@ -68,7 +68,7 @@
     width: 100%;
     padding-left: 21.5px;
     font-size: 18px;
-    color: rgba(0, 48, 69, 0.5);
+    color: rgba(0, 48, 69, 1);
 }
 @media(max-width: 992px){
     .form__input input{
@@ -124,6 +124,10 @@
 
     display: block;
     margin: 0 auto;
+}
+.form__button span{
+    position: relative;
+    z-index: 15;
 }
 @media(max-width: 992px){
     .form__button{

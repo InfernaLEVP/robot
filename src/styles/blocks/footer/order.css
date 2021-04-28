@@ -85,6 +85,11 @@
     align-items: center;
     display: flex;
 }
+.order__button svg,
+.order__button span{
+    position: relative;
+    z-index: 15;
+}
 @media(max-width: 992px){
     .order__button{
         font-size: 18px;

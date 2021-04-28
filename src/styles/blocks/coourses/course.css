@@ -112,11 +112,12 @@
     font-size: 18px;
     line-height: 22px;
     transform: translateY(-9px);
-
-    min-height: 156px;
 }
 .course__description p{
     margin: 0;
+}
+.course__description > p{
+    min-height: 176px;
 }
 @media(max-width: 1200px){
     .course__description{
@@ -161,6 +162,7 @@
 .course__pitch.opened{
     height: var(--height);
     padding-top: 10px;
+    overflow: visible;
 }
 .course__pitch .course__order{
     margin-top: 15px;
@@ -222,6 +224,8 @@
     line-height: 14px;
     text-transform: uppercase;
     pointer-events: none;
+    position: relative;
+    z-index: 15;
 }
 @media(max-width: 1200px){
     .course__order span{

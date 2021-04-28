@@ -97,6 +97,10 @@
     font-size: 14px;
     line-height: 17px;
 }
+.certificate__button span{
+    position: relative;
+    z-index: 15;
+}
 @media(max-width: 992px){
     .certificate__image + div{
         width: 100%;

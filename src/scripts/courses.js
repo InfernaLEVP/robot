@@ -12,6 +12,10 @@ export default function Courses() {
 
             cardActions.style.display = 'none';
             pitch.classList.add('opened');
+            setTimeout(() => {
+                coursesCollapse();    
+            }, 300);
+            
         });
     });
 
@@ -37,7 +41,9 @@ export default function Courses() {
 
     // show all Courses
     const allButton = document.getElementById('allCourses');
+    const initialCourses = document.querySelector('.initial__courses');
     const coursesList = document.querySelector('.corses__list');
+    const courseCollapser = document.querySelector('.courses__collapser');
     const courses = coursesList.querySelectorAll('.course');
 
     coursesCollapse();
@@ -48,41 +54,42 @@ export default function Courses() {
 
     function coursesCollapse(){
         if(window.innerWidth > 992){
-            let initHeight = 0;
+            // let initHeight = 0;
+
             if(courses){
-                initHeight += courses[1].offsetHeight + courses[4].offsetHeight + 56;
-                coursesList.style.height = initHeight + 'px';
+                // initHeight += courses[1].offsetHeight + courses[4].offsetHeight + 56;
+                courseCollapser.style.height = initialCourses.offsetHeight + 'px';
+                console.log(initialCourses.offsetHeight)
             }
-            
 
             allButton.addEventListener('click', (e) => {
 
                 const state = e.target.dataset.state;
 
                 if(state === 'closed'){
-                    let currentHeight = 30;
-                    const count = courses.length / 3;
+                    // let currentHeight = 30;
+                    // const count = courses.length / 3;
 
-                    for (let i = 0; i < count; i++) {
-                        const element = courses[i + 3];
-                        currentHeight += element.offsetHeight + 28;
-                        console.log(currentHeight);
-                    }
+                    // for (let i = 0; i < count; i++) {
+                    //     const element = courses[i + 3];
+                    //     currentHeight += element.offsetHeight + 28;
+                    //     console.log(currentHeight);
+                    // }
 
-                    coursesList.style.height = currentHeight + 'px';
+                    courseCollapser.style.height = coursesList.offsetHeight + 'px';
                     e.target.dataset.state = 'opened';
                 }else{
-                    let initHeight = 0;
+                    // let initHeight = 0;
                     if(courses){
-                        initHeight += courses[1].offsetHeight + courses[4].offsetHeight + 56;
-                        coursesList.style.height = initHeight + 'px';
+                        // initHeight += courses[1].offsetHeight + courses[4].offsetHeight + 56;
+                        courseCollapser.style.height = initialCourses.offsetHeight + 'px';
                         e.target.dataset.state = 'closed';
                     }
                 }
                 
             });
         }else{
-            coursesList.style.height = 'initial';
+            courseCollapser.style.height = 'initial';
         }
     }
     

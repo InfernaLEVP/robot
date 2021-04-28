@@ -59,18 +59,18 @@
                     <strong>иначе мы возвращаем деньги</strong>
                 </div>
     
-                <a href="/#order-form" class="hero__signUp">
-                    Записаться на бесплатный урок
+                <a href="/#order-form" class="hero__signUp button button--moema">
+                    <span>Записаться на бесплатный урок</span>
                 </a>
     
             </div>
     
             <div class="hero__image">
                 <picture>
-                    <source srcset="./images/hero-image.webp" type="image/webp">
-                    <img src="./images/hero-image.png" alt="Роботёнок мать и сын">
+                    <source srcset="./images/hero_image.webp" type="image/webp">
+                    <img src="./images/hero_image.png" alt="Роботёнок мать и сын">
                 </picture>
-                <img class="hero-gif" src="./images/hero-gif.gif" alt="">
+                <img class="hero-gif" src="./images/robot-gif.gif" alt="">
             </div>
 
             <a href="/#order-form" class="hero__signUp">
@@ -79,12 +79,12 @@
 
         </div>
 
-        <div class="hero__arrow">
+        <a href="/#courses" class="hero__arrow">
             <svg width="53" height="33" viewBox="0 0 53 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M49.5 3.22275L25.9998 16.8329L3.06477 3.22274" stroke="#EF9C4E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M49.5 16.2228L25.9998 29.8329L3.06477 16.2227" stroke="#EF9C4E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>                    
-        </div>
+        </a>
 
     </div>
     <!-- ./Hero block --> 
@@ -107,308 +107,317 @@
         <div class="courses__wrapper lContainer">
             <h2 class="courses__title section__title">Наши курсы</h2>
 
-            <div class="corses__list">
+            <div class="courses__collapser">
+                <div class="corses__list">
 
-                <!-- Course card -->
-                <div class="course">
-
-                    <div class="course__head">
-                        <div class="course__name">
-                            <span>Юный</span>
-                            <span>инженер</span>
-                        </div>
-                        <div class="course__image">
-                            <picture>
-                                <source srcset="./images/course_young_engineer.webp" type="image/webp">
-                                <img src="./images/course_young_engineer.jpg" alt="Курс Юный инженер - Роботёнок">
-                            </picture>
-                        </div>
-                    </div>
-
-                    <div class="course__description">
-                        <p>
-                            Ваш ребенок без ума от конструктора Lego, постоянно пытается собрать что-то интересное? Вы хотите, чтобы он узнал, как воплотить в жизнь свои самые смелые творения? Мы готовы помочь!
-                        </p>
-                        <div class="course__pitch">
-                            <div class="close-pitch">
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                    <div class="initial__courses">
+                        <!-- Course card -->
+                        <div class="course">
+        
+                            <div class="course__head">
+                                <div class="course__name">
+                                    <span>Юный</span>
+                                    <span>инженер</span>
+                                </div>
+                                <div class="course__image">
+                                    <picture>
+                                        <source srcset="./images/course_young_engineer.webp" type="image/webp">
+                                        <img src="./images/course_young_engineer.jpg" alt="Курс Юный инженер - Роботёнок">
+                                    </picture>
+                                </div>
                             </div>
-                            <p>Наши занятия развивают пространственное мышление, воображение и мелкую моторику, учат работать в команде!</p>
-                            <button class="course__order md-trigger" data-modal="modal-3"><span>Записаться</span></button>
-                        </div>
-                    </div>
-
-                    <div class="course__actions">
-                        <button class="course__details"><span>Подробнее</span></button>
-                        <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
-                    </div>
-
-                </div>
-                <!-- Course card -->
-
-                <!-- Course card -->
-                <div class="course">
-
-                    <div class="course__head">
-                        <div class="course__name">
-                            <span>Будущий</span>
-                            <span>изобретатель</span>
-                        </div>
-                        <div class="course__image">
-                            <picture>
-                                <source srcset="./images/course_future_inventor.webp" type="image/webp">
-                                <img src="./images/course_future_inventor.jpg" alt="Курс Будущий изобретатель - Роботёнок">
-                            </picture>
-                        </div>
-                    </div>
-
-                    <div class="course__description">
-                        <p>
-                            Ребенка вдохновляют достижения науки и техники, интересуют последние новинки в мире технологий? Вы хотите, чтобы он разбирался в устройствах и гаджетах, и однажды изобрел что-то свое, необычное? Это возможно!
-                        </p>
-                        <div class="course__pitch">
-                            <div class="close-pitch">
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+        
+                            <div class="course__description">
+                                <p>
+                                    Ваш ребенок без ума от конструктора Lego, постоянно пытается собрать что-то интересное? Вы хотите, чтобы он узнал, как воплотить в жизнь свои самые смелые творения? Мы готовы помочь!
+                                </p>
+                                <div class="course__pitch">
+                                    <div class="close-pitch">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <p>Наши занятия развивают пространственное мышление, воображение и мелкую моторику, учат работать в команде!</p>
+                                    <button class="course__order md-trigger button button--moema" data-modal="modal-3"><span>Записаться</span></button>
+                                </div>
                             </div>
-                            <p>Данный курс откроет дорогу в мир экспериментов, позволит на практике осознать математику и физику и научит преодолевать трудности!</p>
-                            <button class="course__order md-trigger" data-modal="modal-3"><span>Записаться</span></button>
-                        </div>
-                    </div>
-
-                    <div class="course__actions">
-                        <button class="course__details"><span>Подробнее</span></button>
-                        <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
-                    </div>
-
-                </div>
-                <!-- Course card -->
-
-                <div class="courses__mobile">
-                    <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M35.7886 2.15704L19.2178 11.754L3.04563 2.15703" stroke="#EF9C4E" stroke-width="4.23079" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M35.7886 11.3238L19.2178 20.9207L3.04563 11.3238" stroke="#EF9C4E" stroke-width="4.23079" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>                   
-
-                <!-- Course card -->
-                <div class="course">
-
-                    <div class="course__head">
-                        <div class="course__name">
-                            <span>Создание игр</span>
-                            <span>в среде Scratch</span>
-                        </div>
-                        <div class="course__image">
-                            <picture>
-                                <source srcset="./images/course_scratch.webp" type="image/webp">
-                                <img src="./images/course_scratch.png" alt="Курс Создание игр в среде Scratch - Роботёнок">
-                            </picture>
-                        </div>
-                    </div>
-
-                    <div class="course__description">
-                        <p>
-                            Ваш ребенок постоянно играет
-                            в компьютерные игры, а вы бы хотели направить его энергию
-                            в правильное русло? Тогда это
-                            к нам! Пришла пора другим играть в игры, которые создаст Ваш ребенок!
-                        </p>
-                        <div class="course__pitch">
-                            <div class="close-pitch">
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+        
+                            <div class="course__actions">
+                                <button class="course__details"><span>Подробнее</span></button>
+                                <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
                             </div>
-                            <p>Дети будут создавать своих персонажей, анимировать и программировать их, и главное получать радость от собственного творения!</p>
-                            <button class="course__order md-trigger" data-modal="modal-3"><span>Записаться</span></button>
+        
                         </div>
-                    </div>
-
-                    <div class="course__actions">
-                        <button class="course__details"><span>Подробнее</span></button>
-                        <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
-                    </div>
-
-                </div>
-                <!-- Course card -->
-
-                <!-- Course card -->
-                <div class="course">
-
-                    <div class="course__head">
-                        <div class="course__name">
-                            <span>Экстремальная</span>
-                            <span>математика</span>
-                        </div>
-                        <div class="course__image">
-                            <picture>
-                                <source srcset="./images/course_math.webp" type="image/webp">
-                                <img src="./images/course_math.png" alt="Курс Экстремальная математика - Роботёнок">
-                            </picture>
-                        </div>
-                    </div>
-
-                    <div class="course__description">
-                        <p>
-                            У ребенка есть склонности
-к точным наукам, он любит решать задачи и быстрее других находить верный ответ? Скорость мышления можно разогнать до бесконечности!
-                        </p>
-                        <div class="course__pitch">
-                            <div class="close-pitch">
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                        <!-- Course card -->
+        
+                        <!-- Course card -->
+                        <div class="course">
+        
+                            <div class="course__head">
+                                <div class="course__name">
+                                    <span>Будущий</span>
+                                    <span>изобретатель</span>
+                                </div>
+                                <div class="course__image">
+                                    <picture>
+                                        <source srcset="./images/course_future_inventor.webp" type="image/webp">
+                                        <img src="./images/course_future_inventor.jpg" alt="Курс Будущий изобретатель - Роботёнок">
+                                    </picture>
+                                </div>
                             </div>
-                            <p>Данные занятия помогают структурировать мышление, сконцентрироваться на главном, находить скрытые возможности и нестандартные решения!</p>
-                            <button class="course__order md-trigger" data-modal="modal-3"><span>Записаться</span></button>
-                        </div>
-                    </div>
-
-                    <div class="course__actions">
-                        <button class="course__details"><span>Подробнее</span></button>
-                        <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
-                    </div>
-
-                </div>
-                <!-- Course card -->
-
-                <div class="courses__mobile">
-                    <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M35.7886 2.15704L19.2178 11.754L3.04563 2.15703" stroke="#EF9C4E" stroke-width="4.23079" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M35.7886 11.3238L19.2178 20.9207L3.04563 11.3238" stroke="#EF9C4E" stroke-width="4.23079" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div> 
-                
-                <!-- Course card -->
-                <div class="course">
-
-                    <div class="course__head">
-                        <div class="course__name">
-                            <span>Цифровой</span>
-                            <span>художник</span>
-                        </div>
-                        <div class="course__image">
-                            <picture>
-                                <source srcset="./images/course_digital_artist.webp" type="image/webp">
-                                <img src="./images/course_digital_artist.png" alt="Курс Цифровой художник - Роботёнок">
-                            </picture>
-                        </div>
-                    </div>
-
-                    <div class="course__description">
-                        <p>
-                            Ребенок увлечен рисованием,
-                            и вы считаете, что необходимо развивать его способности
-                            в современных направлениях, таких как графический дизайн 
-                            и создание анимации? 
-                            Вам к нам!
-                        </p>
-                        <div class="course__pitch">
-                            <div class="close-pitch">
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+        
+                            <div class="course__description">
+                                <p>
+                                    Ребенка вдохновляют достижения науки и техники, интересуют последние новинки в мире технологий? Вы хотите, чтобы он разбирался в устройствах и гаджетах, и однажды изобрел что-то свое, необычное? Это возможно!
+                                </p>
+                                <div class="course__pitch">
+                                    <div class="close-pitch">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <p>Данный курс откроет дорогу в мир экспериментов, позволит на практике осознать математику и физику и научит преодолевать трудности!</p>
+                                    <button class="course__order md-trigger button button--moema" data-modal="modal-3"><span>Записаться</span></button>
+                                </div>
                             </div>
-                            <p>Курс знакомит с принципами дизайнерских решений, учит работе в прикладных программах для создания профессиональных рисунков и спецэффектов! </p>
-                            <button class="course__order md-trigger" data-modal="modal-3"><span>Записаться</span></button>
-                        </div>
-                    </div>
-
-                    <div class="course__actions">
-                        <button class="course__details"><span>Подробнее</span></button>
-                        <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
-                    </div>
-
-                </div>
-                <!-- Course card -->
-
-                <!-- Course card -->
-                <div class="course">
-
-                    <div class="course__head">
-                        <div class="course__name">
-                            <span>Создание сайтов</span>
-                            <span>(HTML, CSS, JS)</span>
-                        </div>
-                        <div class="course__image">
-                            <picture>
-                                <source srcset="./images/course_site_builder.webp" type="image/webp">
-                                <img src="./images/course_site_builder.png" alt="Курс Создание сайтов (HTML, CSS, JS) - Роботёнок">
-                            </picture>
-                        </div>
-                    </div>
-
-                    <div class="course__description">
-                        <p>
-                            Ваш ребенок мечтает стать программистом, хочет здесь и сейчас освоить новую профессию?
-                            По итогу курса каждый создаст свой профессиональный сайт!
-                        </p>
-                        <div class="course__pitch">
-                            <div class="close-pitch">
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+        
+                            <div class="course__actions">
+                                <button class="course__details"><span>Подробнее</span></button>
+                                <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
                             </div>
-                            <p>Мы познакомимся сразу с несколькими важнейшими языками, которые должен знать front-end-разработчик, разберем архитектуру сайта и создадим уникальный дизайн!</p>
-                            <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
+        
                         </div>
-                    </div>
-
-                    <div class="course__actions">
-                        <button class="course__details"><span>Подробнее</span></button>
-                        <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
-                    </div>
-
-                </div>
-                <!-- Course card -->
-
-                <!-- Course card -->
-                <div class="course">
-
-                    <div class="course__head">
-                        <div class="course__name">
-                            <span>Будущий</span>
-                            <span>изобретатель</span>
-                        </div>
-                        <div class="course__image">
-                            <picture>
-                                <source srcset="./images/course_future_inventor.webp" type="image/webp">
-                                <img src="./images/course_future_inventor.jpg" alt="Курс Будущий изобретатель - Роботёнок">
-                            </picture>
-                        </div>
-                    </div>
-
-                    <div class="course__description">
-                        <p>
-                            Ребенка вдохновляют достижения науки и техники, интересуют последние новинки в мире технологий? Вы хотите, чтобы он разбирался в устройствах и гаджетах, и однажды изобрел что-то свое, необычное? Это возможно!
-                        </p>
-                        <div class="course__pitch">
-                            <div class="close-pitch">
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                        <!-- Course card -->
+        
+                        <div class="courses__mobile">
+                            <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.7886 2.15704L19.2178 11.754L3.04563 2.15703" stroke="#EF9C4E" stroke-width="4.23079" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M35.7886 11.3238L19.2178 20.9207L3.04563 11.3238" stroke="#EF9C4E" stroke-width="4.23079" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>                   
+        
+                        <!-- Course card -->
+                        <div class="course">
+        
+                            <div class="course__head">
+                                <div class="course__name">
+                                    <span>Создание игр</span>
+                                    <span>в среде Scratch</span>
+                                </div>
+                                <div class="course__image">
+                                    <picture>
+                                        <source srcset="./images/course_scratch.webp" type="image/webp">
+                                        <img src="./images/course_scratch.png" alt="Курс Создание игр в среде Scratch - Роботёнок">
+                                    </picture>
+                                </div>
                             </div>
-                            <p>Данный курс откроет дорогу в мир экспериментов, позволит на практике осознать математику и физику и научит преодолевать трудности!</p>
-                            <button class="course__order md-trigger" data-modal="modal-3"><span>Записаться</span></button>
+        
+                            <div class="course__description">
+                                <p>
+                                    Ваш ребенок постоянно играет
+                                    в компьютерные игры, а вы бы хотели направить его энергию
+                                    в правильное русло? Тогда это
+                                    к нам! Пришла пора другим играть в игры, которые создаст Ваш ребенок!
+                                </p>
+                                <div class="course__pitch">
+                                    <div class="close-pitch">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <p>Дети будут создавать своих персонажей, анимировать и программировать их, и главное получать радость от собственного творения!</p>
+                                    <button class="course__order md-trigger button button--moema" data-modal="modal-3"><span>Записаться</span></button>
+                                </div>
+                            </div>
+        
+                            <div class="course__actions">
+                                <button class="course__details"><span>Подробнее</span></button>
+                                <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
+                            </div>
+        
                         </div>
+                        <!-- Course card -->
+        
+                        <!-- Course card -->
+                        <div class="course">
+        
+                            <div class="course__head">
+                                <div class="course__name">
+                                    <span>Экстремальная</span>
+                                    <span>математика</span>
+                                </div>
+                                <div class="course__image">
+                                    <picture>
+                                        <source srcset="./images/course_math.webp" type="image/webp">
+                                        <img src="./images/course_math.png" alt="Курс Экстремальная математика - Роботёнок">
+                                    </picture>
+                                </div>
+                            </div>
+        
+                            <div class="course__description">
+                                <p>
+                                    У ребенка есть склонности
+                                    к точным наукам, он любит решать задачи и быстрее других находить верный ответ? Скорость мышления можно разогнать до бесконечности!
+                                </p>
+                                <div class="course__pitch">
+                                    <div class="close-pitch">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <p>Данные занятия помогают структурировать мышление, сконцентрироваться на главном, находить скрытые возможности и нестандартные решения!</p>
+                                    <button class="course__order md-trigger button button--moema" data-modal="modal-3"><span>Записаться</span></button>
+                                </div>
+                            </div>
+        
+                            <div class="course__actions">
+                                <button class="course__details"><span>Подробнее</span></button>
+                                <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
+                            </div>
+        
+                        </div>
+                        <!-- Course card -->
+        
+                        <div class="courses__mobile">
+                            <svg width="38" height="24" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.7886 2.15704L19.2178 11.754L3.04563 2.15703" stroke="#EF9C4E" stroke-width="4.23079" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M35.7886 11.3238L19.2178 20.9207L3.04563 11.3238" stroke="#EF9C4E" stroke-width="4.23079" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div> 
+                        
+                        <!-- Course card -->
+                        <div class="course">
+        
+                            <div class="course__head">
+                                <div class="course__name">
+                                    <span>Цифровой</span>
+                                    <span>художник</span>
+                                </div>
+                                <div class="course__image">
+                                    <picture>
+                                        <source srcset="./images/course_digital_artist.webp" type="image/webp">
+                                        <img src="./images/course_digital_artist.png" alt="Курс Цифровой художник - Роботёнок">
+                                    </picture>
+                                </div>
+                            </div>
+        
+                            <div class="course__description">
+                                <p>
+                                    Ребенок увлечен рисованием,
+                                    и вы считаете, что необходимо развивать его способности
+                                    в современных направлениях, таких как графический дизайн 
+                                    и создание анимации? 
+                                    Вам к нам!
+                                </p>
+                                <div class="course__pitch">
+                                    <div class="close-pitch">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <p>Курс знакомит с принципами дизайнерских решений, учит работе в прикладных программах для создания профессиональных рисунков и спецэффектов! </p>
+                                    <button class="course__order md-trigger button button--moema" data-modal="modal-3"><span>Записаться</span></button>
+                                </div>
+                            </div>
+        
+                            <div class="course__actions">
+                                <button class="course__details"><span>Подробнее</span></button>
+                                <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
+                            </div>
+        
+                        </div>
+                        <!-- Course card -->
+        
+                        <!-- Course card -->
+                        <div class="course">
+        
+                            <div class="course__head">
+                                <div class="course__name">
+                                    <span>Создание сайтов</span>
+                                    <span>(HTML, CSS, JS)</span>
+                                </div>
+                                <div class="course__image">
+                                    <picture>
+                                        <source srcset="./images/course_site_builder.webp" type="image/webp">
+                                        <img src="./images/course_site_builder.png" alt="Курс Создание сайтов (HTML, CSS, JS) - Роботёнок">
+                                    </picture>
+                                </div>
+                            </div>
+        
+                            <div class="course__description">
+                                <p>
+                                    Ваш ребенок мечтает стать программистом, хочет здесь и сейчас освоить новую профессию?
+                                    По итогу курса каждый создаст свой профессиональный сайт!
+                                </p>
+                                <div class="course__pitch">
+                                    <div class="close-pitch">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <p>Мы познакомимся сразу с несколькими важнейшими языками, которые должен знать front-end-разработчик, разберем архитектуру сайта и создадим уникальный дизайн!</p>
+                                    <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
+                                </div>
+                            </div>
+        
+                            <div class="course__actions">
+                                <button class="course__details"><span>Подробнее</span></button>
+                                <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
+                            </div>
+        
+                        </div>
+                        <!-- Course card -->
                     </div>
-
-                    <div class="course__actions">
-                        <button class="course__details"><span>Подробнее</span></button>
-                        <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
+    
+                    <div class="collapsed__courses">
+                        <!-- Course card -->
+                        <div class="course">
+        
+                            <div class="course__head">
+                                <div class="course__name">
+                                    <span>Будущий</span>
+                                    <span>изобретатель</span>
+                                </div>
+                                <div class="course__image">
+                                    <picture>
+                                        <source srcset="./images/course_future_inventor.webp" type="image/webp">
+                                        <img src="./images/course_future_inventor.jpg" alt="Курс Будущий изобретатель - Роботёнок">
+                                    </picture>
+                                </div>
+                            </div>
+        
+                            <div class="course__description">
+                                <p>
+                                    Ребенка вдохновляют достижения науки и техники, интересуют последние новинки в мире технологий? Вы хотите, чтобы он разбирался в устройствах и гаджетах, и однажды изобрел что-то свое, необычное? Это возможно!
+                                </p>
+                                <div class="course__pitch">
+                                    <div class="close-pitch">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L16 16M16 1L1 16" stroke="#003045" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <p>Данный курс откроет дорогу в мир экспериментов, позволит на практике осознать математику и физику и научит преодолевать трудности!</p>
+                                    <button class="course__order md-trigger" data-modal="modal-3"><span>Записаться</span></button>
+                                </div>
+                            </div>
+        
+                            <div class="course__actions">
+                                <button class="course__details"><span>Подробнее</span></button>
+                                <button class="course__order md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Записаться</span></button>
+                            </div>
+        
+                        </div>
+                        <!-- Course card -->
                     </div>
-
+                    
+    
                 </div>
-                <!-- Course card -->
-
             </div>
 
             <div class="courses__all">
-                <button class="courses__button button button--moema button--inverted button--text-thick button--size-s" id="allCourses" data-state="closed">Все курсы</button>
+                <button class="courses__button button button--moema button--inverted button--text-thick button--size-s" id="allCourses" data-state="closed">
+                    <span>Все курсы</span>
+                </button>
             </div>
 
         </div>
@@ -786,7 +795,7 @@
             </div>
 
             <div>
-                <button class="certificate__button md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3">Получить такой же</button>
+                <button class="certificate__button md-trigger button button--moema button--text-thick button--text-upper button--size-s" data-modal="modal-3"><span>Получить такой же</span></button>
             </div>
 
             <svg class="certificate__scroll" width="39" height="27" viewBox="0 0 39 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1073,7 +1082,7 @@
                             </div>
                         </div>
                         
-                        <button class="city__button md-trigger button button--moema button--inverted button--text-thick button--size-s" data-modal="modal-3" data-city="Симферополь">Записаться</button>
+                        <button class="city__button md-trigger button button--moema button--inverted button--text-thick button--size-s" data-modal="modal-3" data-city="Симферополь"><span>Записаться</span></button>
                     </li>
                     <li class="city">
                         <div class="city__wrapper">
@@ -1109,7 +1118,7 @@
                             </div>
                         </div>
                         
-                        <button class="city__button md-trigger button button--moema button--inverted button--text-thick button--size-s" data-modal="modal-3" data-city="Джанкой">Записаться</button>
+                        <button class="city__button md-trigger button button--moema button--inverted button--text-thick button--size-s" data-modal="modal-3" data-city="Джанкой"><span>Записаться</span></button>
                     </li>
                     <li class="city">
                         <div class="city__wrapper">
@@ -1146,7 +1155,7 @@
                             </div>
                         </div>
                         
-                        <button class="city__button md-trigger button button--moema button--inverted button--text-thick button--size-s" data-modal="modal-3" data-city="Керчь">Записаться</button>
+                        <button class="city__button md-trigger button button--moema button--inverted button--text-thick button--size-s" data-modal="modal-3" data-city="Керчь"><span>Записаться</span></button>
                     </li>
                     <li class="city">
                         <div class="city__wrapper">
@@ -1182,7 +1191,7 @@
                             </div>
                         </div>
                        
-                        <button class="city__button md-trigger button button--moema button--inverted button--text-thick button--size-s" data-modal="modal-3" data-city="Севастополь">Записаться</button>
+                        <button class="city__button md-trigger button button--moema button--inverted button--text-thick button--size-s" data-modal="modal-3" data-city="Севастополь"><span>Записаться</span></button>
                     </li>
                 </ul>
 
@@ -1224,12 +1233,12 @@
 
                 <div class="order__text">Остались вопросы? Позвоните!</div>
 
-                <div class="order__button button button--moema">
+                <a href="tel:+7 (978) 104-00-24" class="order__button button button--moema">
                     <svg width="38" height="36" viewBox="0 0 38 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16.0756 20.7669C19.8364 24.3268 24.1935 27.7337 25.9159 26.1022C28.3796 23.7687 29.9001 21.7345 35.3358 25.8727C40.7691 30.0087 36.5949 32.7675 34.2073 35.0267C31.4514 37.637 21.1787 35.1663 11.0247 25.5509C0.873154 15.9333 -1.72829 6.20321 1.02995 3.59291C3.41758 1.32915 6.316 -2.6223 10.6826 2.52404C15.0516 7.67038 12.9063 9.11054 10.4379 11.4463C8.72263 13.0777 12.3171 17.2047 16.0756 20.7669Z" fill="#EFF8F9"/>
                     </svg>                        
-                    +7 (978) 104-00-24
-                </div>
+                    <span>+7 (978) 104-00-24</span>
+                </a>
             </div>
 
             <div class="order__form">
@@ -1257,7 +1266,7 @@
                         <label for="agree">Даю согласие на обработку персональных данных</label>
                     </div>
 
-                    <button class="form__button button button--moema button--inverted button--text-thick button--size-s">записаться</button>
+                    <button class="form__button button button--moema button--inverted button--text-thick button--size-s"><span>записаться</span></button>
                     <!-- Form Result -->
                     <div class="form__result">
                         <div class="form__message"></div>

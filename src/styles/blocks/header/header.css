@@ -158,6 +158,11 @@
 .phone{
 
 }
+.phone span,
+.phone svg{
+    position: relative;
+    z-index: 15;
+}
 .phone svg path{
     transition: all .45s ease-out;
 }

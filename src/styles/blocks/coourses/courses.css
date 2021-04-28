@@ -45,14 +45,33 @@
 }
 
 /*  */
+.courses__collapser{
+    transition: height .35s;
+    overflow: hidden;
+}
+@media(max-width: 992px){
+    .courses__collapser{
+
+    }
+}
+
+/*  */
 .corses__list{
+    
+}
+.initial__courses{
     display: flex;
     flex-wrap: wrap;
 
     justify-content: space-between;
     align-items: flex-start;
-    transition: height .35s;
-    overflow: hidden;
+}
+.collapsed__courses{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: flex-start;
 }
 @media(max-width: 992px){
     .corses__list{
@@ -93,7 +112,7 @@
 }
 @media(max-width: 992px){
     .courses__all{
-
+        display: none;
     }
 }
 
@@ -107,6 +126,10 @@
     line-height: 17px;
     text-transform: uppercase;
     padding: 16px 90px;
+}
+.courses__button span{
+    position: relative;
+    z-index: 15;
 }
 @media(max-width: 992px){
     .courses__button{

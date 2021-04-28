@@ -67,13 +67,16 @@
 .city__street{
     white-space: nowrap;
 }
+.city__street span{
+    border-bottom: 2px solid;
+}
 .mobile-ico{
     display: none;
 }
 @media(max-width: 992px){
     .city__street{
         margin-bottom: 10px;
-        text-decoration: underline;
+        /* text-decoration: underline; */
     }
     .mobile-ico{
         display: inline-block;
@@ -105,6 +108,10 @@
     width: 100%;
     padding: 12px;
     margin-top: 20px;
+}
+.city__button span{
+    position: relative;
+    z-index: 15;
 }
 @media(max-width: 992px){
     .city__button{

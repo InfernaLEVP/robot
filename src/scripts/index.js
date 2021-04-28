@@ -50,6 +50,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     // slidesPerView: 'auto',
     centeredSlides: true,
     initialSlide: 1,
+    autoplay: {
+      delay: 8000,
+    },
     pagination: {
       el: '.photogallry__pagination',
       clickable: true,
@@ -85,6 +88,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     slidesPerView: 1,
     spaceBetween: 10,
     centeredSlides: true,
+    autoplay: {
+      delay: 8000,
+    },
     breakpoints: {
         // when window width is >= 320px
         992: {
