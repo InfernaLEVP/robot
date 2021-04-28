@@ -3,7 +3,10 @@ export default function Reviews() {
     const xlBackground = document.getElementById('reviews__bg');
     const reviewsSlider = document.querySelector('.reviews__slider');
 
-    setReviewsSize();
+    setTimeout(() => {
+        setReviewsSize();    
+    }, 600);
+    
     window.addEventListener('resize', () => {
         setReviewsSize();
     });
