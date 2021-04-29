@@ -3,6 +3,7 @@ import customSelect from './customSelect.js';
 import Courses from './courses.js';
 import Reviews from './reviews.js';
 import Forms from './forms.js';
+import Address from './address.js';
 
 window.addEventListener('DOMContentLoaded', (event) => {
 
@@ -12,6 +13,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   Courses();
   Reviews();
   Forms();
+  Address();
 
   const teamSlider = new Swiper('#team-slider', {
       // Optional parameters
@@ -151,7 +153,7 @@ function setupMap() {
     const yaMap = d.createElement('script'); 
     yaMap.type = 'text/javascript'; 
     yaMap.async = true;
-    yaMap.src = 'https://api-maps.yandex.ru/2.1/?apikey=7aa937c6-6bf4-4e7a-a699-567e97445df3&lang=ru_RU'; 
+    yaMap.src = 'https://api-maps.yandex.ru/2.1/?apikey=d86147cd-522f-4052-bd58-2df194780b62&lang=ru_RU'; 
     yaMap.onload = () => {
       ymaps.ready(init);
       function init() {
@@ -159,13 +161,7 @@ function setupMap() {
             center: [45.301254, 34.576812],
             zoom: 8,
           });
-          const trafficControl = new ymaps.control.TrafficControl({ state: {
-            providerKey: "traffic#actual",
-            trafficShown: true,
-          }});
-          myMap.controls.add(trafficControl);
-          trafficControl.getProvider("traffic#actual").state.set("infoLayerShown", true);
-
+          
           const placemarks = [
             [44.977950, 34.099006],
             [45.711863, 34.398675],

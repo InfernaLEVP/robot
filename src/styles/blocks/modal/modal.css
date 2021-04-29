@@ -154,3 +154,6 @@
     width: 24px;
     height: 24px;
 }
+.hidden-input{
+	display: none;
+}

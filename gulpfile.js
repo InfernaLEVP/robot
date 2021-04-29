@@ -19,7 +19,7 @@ import commonjs from 'rollup-plugin-commonjs';
 
 export const html = () => {
     return gulp.src([
-        'src/index.html',
+        'src/*.html',
         '!header.html', // ignore
         '!footer.html' // ignore
         ])

@@ -1,6 +1,26 @@
 export default function Courses() {
     const aboutButtons = document.querySelectorAll('.course__details');
     const closeButtons = document.querySelectorAll('.close-pitch');
+    const orderButtons = document.querySelectorAll('.course__order');
+
+    orderButtons.forEach(el => {
+        el.addEventListener('click', (e) => {
+            
+            const parentLevel2 = e.target.parentNode.parentNode;
+
+            if(parentLevel2.classList.contains('course')){
+                document.getElementById('m-course').value = parentLevel2.querySelector('.course__name').innerText;
+                return true;
+            }
+
+            const parentLevel3 = e.target.parentNode.parentNode.parentNode;
+            
+            if(parentLevel3.classList.contains('course')){
+                document.getElementById('m-course').value = parentLevel3.querySelector('.course__name').innerText;
+            }
+
+        });
+    });
 
     aboutButtons.forEach( el => {
         el.addEventListener('click', (e) => {
@@ -59,7 +79,7 @@ export default function Courses() {
             if(courses){
                 // initHeight += courses[1].offsetHeight + courses[4].offsetHeight + 56;
                 courseCollapser.style.height = initialCourses.offsetHeight + 'px';
-                console.log(initialCourses.offsetHeight)
+                
             }
 
             allButton.addEventListener('click', (e) => {

@@ -112,6 +112,7 @@
 .city__button span{
     position: relative;
     z-index: 15;
+    pointer-events: none;
 }
 @media(max-width: 992px){
     .city__button{

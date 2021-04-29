@@ -42,7 +42,7 @@
             </div>
 
             <div class="footer__legals">
-                <div class="footer__policy">Политика конфиденциальности</div>
+                <a href="/policy.html" class="footer__policy">Политика конфиденциальности</a>
                 <div class="footer__copyright">
                     2021 robotcrimea.ru ©
                 </div>
@@ -61,10 +61,14 @@
             <div class="modal__dialog">
                 <div class="modal__content">
                     <!-- Form -->
-                    <form action="" class="form">
+                    <form action="https://form.taxi/s/q0dfxiaz" class="form">
+                        <input type="text" name="_gotcha" value="" style="display:none;">
                         <div class="form__title">оставьте заявку </div>
                         <div class="form__subtitle">Чтобы записаться на бесплатный пробный  урок, просто заполните форму</div>
     
+                        <div class="hidden-input">
+                            <input type="text" name="m-course" id="m-course">
+                        </div>
                         <div class="form__input">
                             <input type="text" name="m-name" id="m-name" placeholder="Имя ребенка" required>
                         </div>
@@ -79,7 +83,7 @@
 
                         <div class="form__input">
                             <div class="custom-select">
-                                <select>
+                                <select name="m-city" id="m-city">
                                     <option value="Симферополь">Симферополь</option>
                                     <option value="Симферополь">Симферополь</option>
                                     <option value="Джанкой">Джанкой</option>
